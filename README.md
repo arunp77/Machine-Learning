@@ -117,3 +117,8 @@ The framework for ML algorithm development can be divided into five integrated s
 
 1. Machine learning using python, Manarajan Pradhan, U Dinesh Kumar
 2. Please follow lecture series provided at [Jovian.ml](https://jovian.ai/), i.e. [Data Analysis with Python: Zero to Pandas](https://jovian.ai/learn/data-analysis-with-python-zero-to-pandas)
+3. [Python roadmap](https://roadmap.sh/python/)
+4. [Python tutorials at w3school](https://www.w3schools.com/python/default.asp)
+5. [30 Days of Python](https://github.com/asabeneh/30-days-of-python)
+6. [Python official documents](https://docs.python.org/3/tutorial/)
+7. [Data science roadmaps](https://github.com/codebasics/py/blob/master/TechTopics/DataScienceRoadMap2020/data_science_roadmap_2020.md)
