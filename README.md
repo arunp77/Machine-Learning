@@ -3,8 +3,8 @@
    * [Introduction to Machine learning](#introduction-to-machine-learning)
       * [Analytics](#analytics)
       * [Categories of ML algorithms](#categories-of-ml-algorithms)
-      * [Python and data science](#python-and-data-science)
-   * [Python fundamentals](#python-fundamentals)
+   * [Python and data science](#python-and-data-science)
+      * [Core Python Libraries for Data Analysis](#core-python-libraries-for-data-analysis)
 <!--te-->
 
 # Introduction to Machine learning
