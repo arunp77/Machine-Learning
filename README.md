@@ -4,6 +4,7 @@
       * [Analytics](#analytics)
       * [Categories of ML algorithms](#categories-of-ml-algorithms)
    * [Python and data science](#python-and-data-science)
+      * [First steps with python](https://github.com/arunsinp/Python-programming/blob/main/Python-fundamental/0.first-steps-with-python.ipynb)
       * [Core Python Libraries for Data Analysis](#core-python-libraries-for-data-analysis)
 <!--te-->
 
@@ -55,6 +56,10 @@ The framework for ML algorithm development can be divided into five integrated s
 <img src="frameworkML.png" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
 
 # **Python and data science** 
+
+![image](https://user-images.githubusercontent.com/15100077/209703557-f22b143b-8b42-4c5d-b8dd-f180522f33d8.png)
+
+
 * Data science projects need extraction of data from various sources, data cleaning, data imputation beside model building, validation, and making predictions. 
 * Data analysis is mostly an iterative process, where lots of exploration needs to be done in an ad-hoc manner. 
 * Python being an interpreted language provides an interactive interface for accomplishing this. Python is an interpreted, high-level, general-purpose programming language. 
