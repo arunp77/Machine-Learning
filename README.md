@@ -99,10 +99,86 @@ The framework for ML algorithm development can be divided into five integrated s
 | IDE (Integrated Development Environment) | [Jupyter Notebook](jupyter.org) | The Jupyter Notebook is an opensource web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.|
 
 # Statistics
+* Statistics is the science of collecting, analysing, presenting, and interpreting data.
+* Currently the need to turn the large amounts of data available in many applied fields into useful information has stimulated both theoretical and practical developments in statistics.
+* Data are the facts and figures that are collected, analysed, and summarized for presentation and interpretation.
+* Data may be classified as 
+   a) Qualitative
+   b) Quantitative
+* Quantitative data measure either how much or how many of something, and qualitative data provide labels, or names, for categories of like items.
+* Sample survey methods are used to collect data from observational studies, and experimental design methods are used to collect data from experimental studies.
+* The area of descriptive statistics is concerned primarily with methods of presenting and interpreting data using graphs, tables, and numerical summaries. Whenever statisticians use data from a sample to make statements about a data, they are performing statistical inference.
+* Estimation and hypothesis testing are procedures used to make statistical inferences.
+* Methods of probability were developed initially for the analysis of gambling games.
+* Probability plays a key role in statistical inference; it is used to provide measures of the quality and precision of the inferences.
+* The statistical inference (अनुमान) are used primarily for single-variable studies, while others, such as regression and correlation analysis, are used to make inferences about relationships among two or more variables.
 
 ## Descriptive statisctics
+- Descriptive statistics are tabular, graphical, and numerical summaries of data, i.e.,
+    * tabular,
+    * graphics method or
+    * numerical (for example central tendency and variability).
+- Descriptive statistics are brief informational coefficients that summarize a given data set, which can be either a representation of the entire data or a sample of a data.
+- The purpose of descriptive statistics is to facilitate the presentation and interpretation of data.
+- Descriptive statistics consists of three basic categories of measures:
+    1. measures of central tendency: focus on the average or middle values of data sets
+    2. measures of variability (or spread): aid in analysing how dispersed the distribution is for a set of data
+    3. frequency distribution.
+- Measures of central tendency describe the centre of the data set (mean, median, mode).
+- Measures of variability describe the dispersion of the data set (variance, standard deviation).
+- Measures of frequency distribution describe the occurrence of data within the data set (count)
+
+1. **Tabular methods:**
+    - The most commonly used tabular summary of data for a single variable is a frequency distribution.
+    - A frequency distribution shows the number of data values in each of several nonoverlapping classes.
+    - Another tabular summary, called a relative frequency distribution, shows the fraction, or percentage, of data values in each class.
+    - The most common tabular summary of data for two variables is a cross tabulation, a two-variable analogue of a frequency distribution.
+    - Constructing a frequency distribution for a quantitative variable requires more care in defining the classes and the division points between adjacent classes.
+    - A frequency distribution would show the number of data values in each of these classes, and a relative frequency distribution would show the fraction of data values in each.
+    - A cross tabulation is a two-way table with the rows of the table representing the classes of one variable and the columns of the table representing the classes of another variable.
+
+2. **Graphical Methods:** A number of graphical methods are available for describing data.
+    - Dot plots.
+    - Histograms.
+    - Box-whisker plots.
+    - Scatter plots.
+    - Bar charts.
+    - Pie charts
+3. **Numerical statistics:** This is broken down into-
+    - Measures of central tendency: include the
+        * mean,
+        * median,
+        * mode,
+        * percentiles
+    - **Measures of variability (spread):** include
+        * standard deviation,
+        * variance,
+        * minimum and maximum variables,
+        * kurtosis, and
+        * skewness.
+    - **Outliers:** Sometimes data for a variable will include one or more values that appear unusually large or small and out of place when compared with the other data values. These values are known as outliers and often have been erroneously included in the data set.
+        * The mean and standard deviation are used to identify outliers.
+        * A z-score can be computed for each data value.
+        * With x representing the data value, x̄ the sample mean, and s the sample standard deviation, the z-score is given by
+
+            $z=\frac{x-\bar{x}}{s}$
+        * The z-score represents the relative position of the data value by indicating the number of standard deviations it is from the mean.
+        *  A rule of thumb is that any value with a z-score less than −3 or greater than +3 should be considered an outlier (i.e. 𝑧<−3,𝑜𝑟 𝑧>+3).
+
 
 ## Probability diestributions and hypotehsis testing
+### Probability
+- Probability is a subject that deals with uncertainty. 
+- In everyday terminology, probability can be thought of as a numerical measure of the likelihood that a particular event will occur.
+- Probability values are assigned on a scale from 0 to 1, with values near 0 indicating that an event is unlikely to occur and those near 1 indicating that an event is likely to take place.
+- Suppose that an event E can happen in h ways out of a total of n possible equally likely ways. Then the probability of occurrence of the event (called its success) is denoted by
+
+    $p=Pr\{E\}=\frac{h}{n}~~~~~~~~~~~~~~~$ (success probability)
+- The probability of non-occurrence of the event (called its failure) is denoted by
+
+    $𝑞=1−𝑝 \rightarrow 𝑝+𝑞=1 $
+
+### Conditional probability; Independent and dependent events:
 
 ## Linear Regression
 
@@ -112,7 +188,7 @@ The framework for ML algorithm development can be divided into five integrated s
 
 
 
-
+<!---------------------------- Reference ------------------------------>
 # Reference
 
 1. Machine learning using python, Manarajan Pradhan, U Dinesh Kumar
@@ -122,3 +198,4 @@ The framework for ML algorithm development can be divided into five integrated s
 5. [30 Days of Python](https://github.com/asabeneh/30-days-of-python)
 6. [Python official documents](https://docs.python.org/3/tutorial/)
 7. [Data science roadmaps](https://github.com/codebasics/py/blob/master/TechTopics/DataScienceRoadMap2020/data_science_roadmap_2020.md)
+8. Statistics, Murray R. Spiegel, Larry J. Stephens
