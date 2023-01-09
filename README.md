@@ -19,6 +19,7 @@
       * [Probability distributions and hypothesis testing](#probability-diestributions-and-hypotehsis-testing)
       * [Linear Regression](#linear-regression)
       * [Advanced machine learning](#advanced-machine-learning)
+   *  [References](#reference)
 <!--te-->
 
 # Introduction to Machine learning
@@ -107,3 +108,12 @@ The framework for ML algorithm development can be divided into five integrated s
 
 ## Advanced Machine learning
 
+
+
+
+
+
+# Reference
+
+1. Machine learning using python, Manarajan Pradhan, U Dinesh Kumar
+2. Please follow lecture series provided at [Jovian.ml](https://jovian.ai/), i.e. [Data Analysis with Python: Zero to Pandas](https://jovian.ai/learn/data-analysis-with-python-zero-to-pandas)
