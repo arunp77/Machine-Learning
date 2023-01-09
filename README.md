@@ -1,3 +1,12 @@
+# Table of contents
+<!--ts-->
+   * [Introduction to Machine learning](#introduction-to-machine-learning)
+      * [Analytics](#analytics)
+      * [Categories of ML algorithms](#categories-of-ml-algorithms)
+      * [Python and data science](#python-and-data-science)
+   * [Python fundamentals](#python-fundamentals)
+<!--te-->
+
 # Introduction to Machine learning
 
 ## Analytics
