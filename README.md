@@ -3,9 +3,22 @@
    * [Introduction to Machine learning](#introduction-to-machine-learning)
       * [Analytics](#analytics)
       * [Categories of ML algorithms](#categories-of-ml-algorithms)
-   * [Python and data science](#python-and-data-science)
+      * [A typical ML algorithm uses the following steps](#a-typical-ml-algorithm-uses-the-following-steps)
+      * [Framework for develping ML models](#framework-for-develping-ml-models)
+   *  [Python](https://github.com/arunsinp/Python-programming)
+      * [Google colab help](https://github.com/arunsinp/Python-programming/blob/main/Python-fundamental/google-colab-help.ipynb)
+      * [Python OS and filesystem](https://github.com/arunsinp/Python-programming/blob/main/Python-fundamental/python-os-and-filesystem.ipynb)
       * [First steps with python](https://github.com/arunsinp/Python-programming/blob/main/Python-fundamental/0.first-steps-with-python.ipynb)
+      * [Python variables and data types](https://github.com/arunsinp/Python-programming/blob/main/Python-fundamental/1.python-variables-and-data-types.ipynb)
+      * [Python conditionals and loops](https://github.com/arunsinp/Python-programming/blob/main/Python-fundamental/2.python-conditionals-and-loops.ipynb)
+      * [Python functions and scope](https://github.com/arunsinp/Python-programming/blob/main/Python-fundamental/3.%20python-functions-and-scope.ipynb)
+      * [Numpy](https://github.com/arunsinp/Python-programming/blob/main/Python-fundamental/NUMPY.ipynb)
+   * [Python and data science](#python-and-data-science)
       * [Core Python Libraries for Data Analysis](#core-python-libraries-for-data-analysis)
+      * [Descriptive statistics](#descriptive-statisctics)
+      * [Probability distributions and hypothesis testing](#probability-diestributions-and-hypotehsis-testing)
+      * [Linear Regression](#linear-regression)
+      * [Advanced machine learning](#advanced-machine-learning)
 <!--te-->
 
 # Introduction to Machine learning
@@ -34,7 +47,8 @@ both input as well as the output variables. For example, consider the case of sp
 <img src="category1.png" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
 
 
-**A typical ML algorithm uses the following steps:**
+## A typical ML algorithm uses the following steps
+
 1. Identify the problem or opportunity for value creation.
 2. Identify sources of data (primary as well secondary data sources) and create a data lake
 (integrated data set from different sources).
@@ -44,7 +58,7 @@ both input as well as the output variables. For example, consider the case of sp
 5. Build ML models and identify the best model(s) using model performance in validation data.
 6. Implement Solution/Decision/Develop Product.
 
-**Framework for develping ML models:**
+## Framework for develping ML models
 
 The framework for ML algorithm development can be divided into five integrated stages:
 - problem and opportunity identification, 
@@ -55,7 +69,7 @@ The framework for ML algorithm development can be divided into five integrated s
 
 <img src="frameworkML.png" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
 
-# **Python and data science** 
+# Python and data science
 
 ![image](https://user-images.githubusercontent.com/15100077/209703557-f22b143b-8b42-4c5d-b8dd-f180522f33d8.png)
 
@@ -83,4 +97,13 @@ The framework for ML algorithm development can be divided into five integrated s
 | Machine Learning Algorithm | [Scikit-learn (aka sklearn)](https://scikit-learn.org/stable/) | Scikit-learn provides a range of supervised and unsupervised learning algorithms. |
 | IDE (Integrated Development Environment) | [Jupyter Notebook](jupyter.org) | The Jupyter Notebook is an opensource web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.|
 
-# 
+# Statistics
+
+## Descriptive statisctics
+
+## Probability diestributions and hypotehsis testing
+
+## Linear Regression
+
+## Advanced Machine learning
+
