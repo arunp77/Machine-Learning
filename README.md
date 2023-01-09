@@ -170,8 +170,8 @@ The framework for ML algorithm development can be divided into five integrated s
 ### Probability
 - Probability is a subject that deals with uncertainty. 
 - In everyday terminology, probability can be thought of as a numerical measure of the likelihood that a particular event will occur.
-- Probability values are assigned on a scale from 0 to 1, with values near 0 indicating that an event is unlikely to occur and those near 1 indicating that an event is likely to take place.
-- Suppose that an event E can happen in h ways out of a total of n possible equally likely ways. Then the probability of occurrence of the event (called its success) is denoted by
+- Probability values are assigned on a scale from `0` to `1`, with values near `0` indicating that an event is unlikely to occur and those near `1` indicating that an event is likely to take place.
+- Suppose that an event `E` can happen in `h` ways out of a total of `n` possible equally likely ways. Then the probability of occurrence of the event (called its success) is denoted by
 
     $p=Pr\{E\}=\frac{h}{n}~~~~~~~~~~~~~~~$ (success probability)
 - The probability of non-occurrence of the event (called its failure) is denoted by
