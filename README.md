@@ -175,13 +175,80 @@ The framework for ML algorithm development can be divided into five integrated s
 - Probability values are assigned on a scale from `0` to `1`, with values near `0` indicating that an event is unlikely to occur and those near `1` indicating that an event is likely to take place.
 - Suppose that an event `E` can happen in `h` ways out of a total of `n` possible equally likely ways. Then the probability of occurrence of the event (called its success) is denoted by
     
-    $p=Pr\{E\}=\frac{h}{n}~~~~~~~~~~~~~~~$ (success probability)
+    $p=Pr\{E\}=\frac{h}{n} ~~~~~~~~~~~~~~~$ (success probability)
 
 - The probability of non-occurrence of the event (called its failure) is denoted by
 
     $𝑞=1−𝑝 \rightarrow 𝑝+𝑞=1 $
 
 ### Conditional probability; Independent and dependent events:
+- If $E_1$ and $E_2$ are two events, the probability that $E_2$ occurs given that $E_1$ has occurred is denoted by $Pr\{E_2|E_1\}$, or $Pr\{E_2 ~\text{given} ~E_1\}$, and is called the conditional probability of $E_2$ given that $E_1$ has occurred.
+- If the occurrence or non-occurrence of $E_1$ does not affect the probability of occurrence of $E_2$, then $Pr\{E_2 | E_1\}=Pr\{E_2\}$ and we say that $E_1$ and $E_2$ are independent events, they are dependents.
+- If we denote by $(E_1 E_2)$ the event that "both $E_1$ and $E_2$ occur,’’ sometimes called a compound event, then
+
+    $Pr \{𝐸1𝐸2\}=Pr\{𝐸_1\} Pr\{𝐸_2|𝐸_1\}$
+
+- Similarly for three events $(𝐸_1 𝐸_2 𝐸_3)$ 
+
+    $Pr {𝐸1𝐸2𝐸3}=Pr{𝐸1}Pr {𝐸2|𝐸1}Pr {𝐸3|𝐸2𝐸1}$
+
+    If these events are independent, then 
+    
+    $Pr\{𝐸_1 𝐸_2\}=Pr\{𝐸_1\} Pr\{𝐸_2\}.$
+    
+    Similarly 
+    
+    $Pr\{𝐸_1 𝐸_2 𝐸_3\}=Pr\{𝐸_1\} Pr\{𝐸_2\} Pr\{𝐸_3\}$.
+
+ ### Random variables and probability distributions:
+- A random variable is a numerical description of the outcome of a statistical experiment.
+- A random variable that may assume only a finite number or an infinite sequence of values is said to be discrete; one that may assume any value in some interval on the real number line is said to be continuous
+    * Discrete random variables
+    * Continuous random variables
+
+## Probability distribution
+The probability distribution for a random variable describes how the probabilities are distributed over the values of the random variable. Based on the variables, probability distributions are of two type mainly: 
+1. Discrete probability distribution, and 
+2. Continuous probability distribution.
+
+### Discrete probability distribution: 
+For a discrete random variable, $x$, the probability distribution is defined by a probability mass function, denoted by $p(x)$. This function provides the probability for each value of the random variable.
+
+Following two conditions must be satisfied for $p(x)$
+- $p(x)$ must be nonnegative for each value of the random variable, and
+- the sum of the probabilities for each value of the random variable must equal one.
+
+### Continuous probability distribution: 
+
+- A continuous random variable may assume any value in an interval on the real number line or in a collection of intervals. Since there is an infinite number of values in any interval, it is not meaningful to talk about the probability that the random variable will take on a specific value; instead, the probability that a continuous random variable will lie within a given interval is considered.
+
+- In the continuous case, the counterpart of the probability mass function is the probability density function, also denoted by $p(x)$. For a continuous random variable, the probability density function provides the height or value of the function at any particular value of $x$; it does not directly give the probability of the random variable taking on a specific value. However, the area under the graph of $p(x)$ corresponding to some interval, obtained by computing the integral of $p(x)$ over that interval, provides the probability that the variable will take on a value within that interval.
+
+- A probability density function must satisfy two requirements:
+
+    * $f(x)$ must be nonnegative for each value of the random variable, and
+    * the integral over all values of the random variable must equal one.
+
+
+
+
+
+
+### Mutually exclusive events:
+- Two or more events are called mutually exclusive if the occurrence of any one of them excludes the occurrence of the others. Thus if $E_1$ and $E_2$ are mutually exclusive events, then
+
+    $Pr\{𝐸_1 𝐸_2\}=0.$
+
+- If $E_1 + E_2$ denotes the event that ‘‘either $E_1$ or $E_2$ or both occur’’, then
+
+    $Pr{𝐸_1+𝐸_2}=Pr\{𝐸_1\} + Pr\{𝐸_2\} − Pr\{𝐸_1 𝐸_2\}$
+
+
+
+
+
+
+
 
 ## Linear Regression
 
