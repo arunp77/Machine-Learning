@@ -185,20 +185,57 @@ The framework for ML algorithm development can be divided into five integrated s
     * **Disadvantage:** One of the most commonly discussed disadvantages of variance is that it gives added weight to numbers that are far from the mean, or outliers. Squaring these numbers can at times result in skewed interpretations of the data set as a whole.
     * **Formula:** The variance of a random variable, denoted by Var(x) or σ2, is a weighted average of the squared deviations from the mean. The formulas for computing the variances of discrete and continuous random variables are given by:
 
-    Var(x) = $\sigma^2=\sum_i (x_i-\mu)^2 P_i(x)$
+        Var(x) = $\sigma^2=\sum_i (x_i-\mu)^2 P_i(x) ~~~~~~~~$  (for discrete variables)
 
+        Var(x) = $\int dx ~ (x-\mu)^2 ~ p(x) ~~~~~~~~$  (for continuous variables)
+    
+    In this formula, $x$ represents an individual data point, $\mu$ represents the mean of the data points, and $n$ represents the total number of data points.
 
+    <img src="https://miro.medium.com/max/720/1*4ct-L3QpNuiAsR10kGKGoQ.webp" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
+    
+    ([Reference for the figure](https://towardsdatascience.com/5-things-you-should-know-about-covariance-26b12a0516f1))
 
+- **Standard deviation:**
+    The standard deviation, denoted σ, is the positive square root of the variance., i.e. $\sigma= \sqrt{Var(x)}$. Since the standard deviation is measured in the same units as the random variable and the variance is measured in squared units, the standard deviation is often the preferred measure.
 
+- **Covariance:** 
+    * Covariance provides insight into how two variables are related to one another.
+    * More precisely, covariance refers to the measure of how two random variables in a data set will change together.
+    * A positive covariance means that the two variables at hand are positively related, and they move in the same direction.
+    * A negative covariance means that the variables are inversely related, or that they move in opposite directions.
+    * A zero covariance means that the variables are not related to each other.
 
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/Covar.png" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
 
+        Cov(X, Y) = $\frac{\sum_i^n (x_i-\bar{x})(y_i-\bar{y})}{N-1}$
+     
+        In this formula, $X$ represents the independent variable, $Y$ represents the dependent variable, $N$ represents the number of data points in the sample, $\bar{x}$ represents the mean of the $X$, and $\bar{y}$ represents the mean of the dependent variable $Y$. Note that while calculating a sample variance in order to estimate a population variance, the denominator of the variance equation becomes N – 1. This removes bias from the estimation.
+- **Correlation:**
+    * Covariance and correlation both primarily assess the relationship between variables.
+    * The closest analogy to the relationship between them is the relationship between the variance and standard deviation.
+    * Covariance measures the total variation of two random variables from their expected values. Using covariance, we can only gauge the direction of the relationship (whether the variables tend to move in tandem or show an inverse relationship). However, it does not indicate the strength of the relationship, nor the dependency between the variables.
+    * On the other hand, correlation measures the strength of the relationship between variables. Correlation is the scaled measure of covariance. It is dimensionless. In other words, the correlation coefficient is always a pure value and not measured in any units.
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/Correl.png" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
 
+     ([for reference click the website](https://www.geeksforgeeks.org/robust-correlation/))
 
+    * **Relation between the covariance and correlation:**
 
+        $\rho(X,Y)=\frac{Cov(X,Y)}{\sigma_X \sigma_Y}$
 
+        Where $ρ(X,Y)$ – is the correlation between the variables X and Y
+        
+        COV(X,Y) – is the covariance between the variables X and Y
 
+        $\sigma_X$ – is the standard deviation of the X-variable
 
+        $\sigma_Y$– is the standard deviation of the Y-variable
 
+    * **Advantages of the Correlation Coefficient:**
+        1. Covariance can take on practically any number while a correlation is limited: -1 to +1.
+        2. Because of its numerical limitations, correlation is more useful for determining how strong the relationship is between the two variables.
+        3. Correlation does not have units. Covariance always has units.
+        4. Correlation isn’t affected by changes in the centre (i.e. mean) or scale of the variables.
 
 # **Probability distributions and hypothesis testing**
 
