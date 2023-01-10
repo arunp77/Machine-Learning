@@ -215,6 +215,7 @@ The framework for ML algorithm development can be divided into five integrated s
     * The closest analogy to the relationship between them is the relationship between the variance and standard deviation.
     * Covariance measures the total variation of two random variables from their expected values. Using covariance, we can only gauge the direction of the relationship (whether the variables tend to move in tandem or show an inverse relationship). However, it does not indicate the strength of the relationship, nor the dependency between the variables.
     * On the other hand, correlation measures the strength of the relationship between variables. Correlation is the scaled measure of covariance. It is dimensionless. In other words, the correlation coefficient is always a pure value and not measured in any units.
+    
     <img src="https://media.geeksforgeeks.org/wp-content/uploads/Correl.png" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
 
      ([for reference click the website](https://www.geeksforgeeks.org/robust-correlation/))
