@@ -200,6 +200,16 @@ The framework for ML algorithm development can be divided into five integrated s
     
     $Pr\{𝐸_1 𝐸_2 𝐸_3\}=Pr\{𝐸_1\} Pr\{𝐸_2\} Pr\{𝐸_3\}$.
 
+
+### **Mutually exclusive events:**
+- Two or more events are called mutually exclusive if the occurrence of any one of them excludes the occurrence of the others. Thus if $E_1$ and $E_2$ are mutually exclusive events, then
+
+    $Pr\{𝐸_1 𝐸_2\}=0.$
+
+- If $E_1 + E_2$ denotes the event that ‘‘either $E_1$ or $E_2$ or both occur’’, then
+
+    $Pr\{𝐸_1 + 𝐸_2\}=Pr\{𝐸_1\} + Pr\{𝐸_2\} − Pr\{𝐸_1 𝐸_2\}$.
+
  ### **Random variables and probability distributions**
 - A random variable is a numerical description of the outcome of a statistical experiment.
 - A random variable that may assume only a finite number or an infinite sequence of values is said to be discrete; one that may assume any value in some interval on the real number line is said to be continuous
@@ -236,19 +246,6 @@ Following two conditions must be satisfied for $p(x)$
     * $f(x)$ must be nonnegative for each value of the random variable, and
     * the integral over all values of the random variable must equal one.
 
-
-
-
-
-
-### **Mutually exclusive events:**
-- Two or more events are called mutually exclusive if the occurrence of any one of them excludes the occurrence of the others. Thus if $E_1$ and $E_2$ are mutually exclusive events, then
-
-    $Pr\{𝐸_1 𝐸_2\}=0.$
-
-- If $E_1 + E_2$ denotes the event that ‘‘either $E_1$ or $E_2$ or both occur’’, then
-
-    $Pr\{𝐸_1 + 𝐸_2\}=Pr\{𝐸_1\} + Pr\{𝐸_2\} − Pr\{𝐸_1 𝐸_2\}$.
 
 
 
