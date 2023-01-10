@@ -168,6 +168,24 @@ The framework for ML algorithm development can be divided into five integrated s
 - **Mean or expectation value:** 
   The expected value, or mean, of a random variable—denoted by E(x) or μ—is a weighted average of the values the random variable may assume. The formulas for computing the expected values of discrete and continuous random variables are given by:
 
+    E(x)= $\sum_i x_i p_i(x)~~~~~~~~~~~~~~~~~~~~~~~~$  for discrete variables
+
+    E(x)= $\int ~dx~ x ~p(x)~~~~~~~~~~~~~~~~~~~~~~$  for continuous variables
+
+    If $x_1, ~x_2, ~ x_3,.....x_i...., x_k$ have frequency $f_1,~ f_2,~ f_3,…… ~f_k$ then 
+
+    𝐸(𝑥)=$\sum_i \frac{f_i~ x_i}{n}$.
+
+- **Variance:**
+    * In statistics, variance refers to the spread of a data set. It’s a measurement used to identify how far each number in the data set is from the mean.
+    * The larger the variance, the more spread in the data set.
+    * A large variance means that the numbers in a set are far from the mean and each other. A small variance means that the numbers are closer together in value.
+    * Variance is calculated by taking the differences between each number in a data set and the mean, squaring those differences to give them positive value, and dividing the sum of the resulting squares by the number of values in the set.
+    * Advantage: One of the primary advantages of variance is that it treats all deviations from the mean of the data set in the same way, regardless of direction. This ensures that the squared deviations cannot sum to zero, which would result in giving the appearance that there was no variability in the data set at all.
+    * **Disadvantage:** One of the most commonly discussed disadvantages of variance is that it gives added weight to numbers that are far from the mean, or outliers. Squaring these numbers can at times result in skewed interpretations of the data set as a whole.
+    * **Formula:** The variance of a random variable, denoted by Var(x) or σ2, is a weighted average of the squared deviations from the mean. The formulas for computing the variances of discrete and continuous random variables are given by:
+
+    Var(x) = $\sigma^2=\sum_i (x_i-\mu)^2 P_i(x)$
 
 
 
@@ -181,7 +199,8 @@ The framework for ML algorithm development can be divided into five integrated s
 
 
 
-# **Probability diestributions and hypotehsis testing**
+
+# **Probability distributions and hypothesis testing**
 
 ### **Probability**
 
