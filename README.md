@@ -217,6 +217,7 @@ The probability distribution for a random variable describes how the probabiliti
 
 
 
+
 ### **Discrete probability distribution:**
 For a discrete random variable, $x$, the probability distribution is defined by a probability mass function, denoted by $p(x)$. This function provides the probability for each value of the random variable.
 
@@ -243,11 +244,11 @@ Following two conditions must be satisfied for $p(x)$
 ### **Mutually exclusive events:**
 - Two or more events are called mutually exclusive if the occurrence of any one of them excludes the occurrence of the others. Thus if $E_1$ and $E_2$ are mutually exclusive events, then
 
-    $Pr\{𝐸_1 𝐸_2\}=0.$
+    Pr{𝐸$_1$ 𝐸$_2$}=0.
 
 - If $E_1 + E_2$ denotes the event that ‘‘either $E_1$ or $E_2$ or both occur’’, then
 
-    $Pr\{𝐸_1+𝐸_2\}=Pr\{𝐸_1\} + Pr\{𝐸_2\} − Pr\{𝐸_1 𝐸_2\}$
+    Pr{𝐸$_1$+𝐸$_2$}=Pr{𝐸$_1$} + Pr{𝐸$_2$} − Pr{𝐸$_1$ 𝐸$_2$}
 
 
 
