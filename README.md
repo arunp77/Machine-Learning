@@ -165,8 +165,23 @@ The framework for ML algorithm development can be divided into five integrated s
         * The z-score represents the relative position of the data value by indicating the number of standard deviations it is from the mean.
         *  A rule of thumb is that any value with a z-score less than −3 or greater than +3 should be considered an outlier (i.e. 𝑧<−3,𝑜𝑟 𝑧>+3).
 
+- **Mean or expectation value:** 
+  The expected value, or mean, of a random variable—denoted by E(x) or μ—is a weighted average of the values the random variable may assume. The formulas for computing the expected values of discrete and continuous random variables are given by:
 
-## **Probability diestributions and hypotehsis testing**
+
+
+
+
+
+
+
+
+
+
+
+
+
+# **Probability diestributions and hypotehsis testing**
 
 ### **Probability**
 
@@ -210,13 +225,6 @@ The framework for ML algorithm development can be divided into five integrated s
 
     $Pr\{𝐸_1 + 𝐸_2\}=Pr\{𝐸_1\} + Pr\{𝐸_2\} − Pr\{𝐸_1 𝐸_2\}$.
 
- ### **Random variables and probability distributions**
-- A random variable is a numerical description of the outcome of a statistical experiment.
-- A random variable that may assume only a finite number or an infinite sequence of values is said to be discrete; one that may assume any value in some interval on the real number line is said to be continuous
-    * Discrete random variables
-    * Continuous random variables
-
-    <img src="https://miro.medium.com/max/640/1*7DwXV_h_t7_-TkLAImKBaQ.webp" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
 
 ## **Probability distribution**
 The probability distribution for a random variable describes how the probabilities are distributed over the values of the random variable. Based on the variables, probability distributions are of two type mainly: 
@@ -225,6 +233,13 @@ The probability distribution for a random variable describes how the probabiliti
 
 <img src="https://miro.medium.com/max/720/1*4uD1j7NvakmaLmlpgGwk-A.webp" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
 
+### **Random variables**
+- A random variable is a numerical description of the outcome of a statistical experiment.
+- A random variable that may assume only a finite number or an infinite sequence of values is said to be discrete; one that may assume any value in some interval on the real number line is said to be continuous
+    * Discrete random variables
+    * Continuous random variables
+
+    <img src="https://miro.medium.com/max/640/1*7DwXV_h_t7_-TkLAImKBaQ.webp" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
 
 
 
