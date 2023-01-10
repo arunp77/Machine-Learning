@@ -166,9 +166,9 @@ The framework for ML algorithm development can be divided into five integrated s
         *  A rule of thumb is that any value with a z-score less than −3 or greater than +3 should be considered an outlier (i.e. 𝑧<−3,𝑜𝑟 𝑧>+3).
 
 
-## Probability diestributions and hypotehsis testing
+## **Probability diestributions and hypotehsis testing**
 
-### Probability
+### **Probability**
 
 - Probability is a subject that deals with uncertainty. 
 - In everyday terminology, probability can be thought of as a numerical measure of the likelihood that a particular event will occur.
@@ -181,7 +181,7 @@ The framework for ML algorithm development can be divided into five integrated s
 
     $𝑞=1−𝑝 \rightarrow 𝑝+𝑞=1 $
 
-### Conditional probability; Independent and dependent events:
+### **Conditional probability; Independent and dependent events**
 - If $E_1$ and $E_2$ are two events, the probability that $E_2$ occurs given that $E_1$ has occurred is denoted by $Pr\{E_2|E_1\}$, or $Pr\{E_2 ~\text{given} ~E_1\}$, and is called the conditional probability of $E_2$ given that $E_1$ has occurred.
 - If the occurrence or non-occurrence of $E_1$ does not affect the probability of occurrence of $E_2$, then $Pr\{E_2 | E_1\}=Pr\{E_2\}$ and we say that $E_1$ and $E_2$ are independent events, they are dependents.
 - If we denote by $(E_1 E_2)$ the event that "both $E_1$ and $E_2$ occur,’’ sometimes called a compound event, then
@@ -200,25 +200,31 @@ The framework for ML algorithm development can be divided into five integrated s
     
     $Pr\{𝐸_1 𝐸_2 𝐸_3\}=Pr\{𝐸_1\} Pr\{𝐸_2\} Pr\{𝐸_3\}$.
 
- ### Random variables and probability distributions:
+ ### **Random variables and probability distributions**
 - A random variable is a numerical description of the outcome of a statistical experiment.
 - A random variable that may assume only a finite number or an infinite sequence of values is said to be discrete; one that may assume any value in some interval on the real number line is said to be continuous
     * Discrete random variables
     * Continuous random variables
 
-## Probability distribution
+    <img src="https://miro.medium.com/max/640/1*7DwXV_h_t7_-TkLAImKBaQ.webp" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
+
+## **Probability distribution**
 The probability distribution for a random variable describes how the probabilities are distributed over the values of the random variable. Based on the variables, probability distributions are of two type mainly: 
 1. Discrete probability distribution, and 
 2. Continuous probability distribution.
 
-### Discrete probability distribution: 
+<img src="https://miro.medium.com/max/720/1*4uD1j7NvakmaLmlpgGwk-A.webp" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
+
+
+
+### **Discrete probability distribution:**
 For a discrete random variable, $x$, the probability distribution is defined by a probability mass function, denoted by $p(x)$. This function provides the probability for each value of the random variable.
 
 Following two conditions must be satisfied for $p(x)$
 - $p(x)$ must be nonnegative for each value of the random variable, and
 - the sum of the probabilities for each value of the random variable must equal one.
 
-### Continuous probability distribution: 
+### **Continuous probability distribution**
 
 - A continuous random variable may assume any value in an interval on the real number line or in a collection of intervals. Since there is an infinite number of values in any interval, it is not meaningful to talk about the probability that the random variable will take on a specific value; instead, the probability that a continuous random variable will lie within a given interval is considered.
 
@@ -234,14 +240,33 @@ Following two conditions must be satisfied for $p(x)$
 
 
 
-### Mutually exclusive events:
+### **Mutually exclusive events:**
 - Two or more events are called mutually exclusive if the occurrence of any one of them excludes the occurrence of the others. Thus if $E_1$ and $E_2$ are mutually exclusive events, then
 
     $Pr\{𝐸_1 𝐸_2\}=0.$
 
 - If $E_1 + E_2$ denotes the event that ‘‘either $E_1$ or $E_2$ or both occur’’, then
 
-    $Pr{𝐸_1+𝐸_2}=Pr\{𝐸_1\} + Pr\{𝐸_2\} − Pr\{𝐸_1 𝐸_2\}$
+    $Pr\{𝐸_1+𝐸_2\}=Pr\{𝐸_1\} + Pr\{𝐸_2\} − Pr\{𝐸_1 𝐸_2\}$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
