@@ -389,12 +389,12 @@ where $\mu$ = mean, $\sigma$ = standard deviation. The total area bounded by the
 
 In probability theory and statistics, the exponential distribution is the probability distribution of the time between events in a Poisson point process, i.e., a process in which events occur continuously and independently at a constant average rate. The probability density function (pdf) of an exponential distribution is
 
-   $f(x; \lambda) = 
+   $$f(x; \lambda) = 
    \begin{cases}
       \lambda e^{-\lambda x}, & x\geq 0, \\
       0, & x < 0 .
     \end{cases}
-   $
+   $$
 
 
 
