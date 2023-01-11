@@ -285,14 +285,6 @@ The framework for ML algorithm development can be divided into five integrated s
 
     Pr{ $𝐸_1$ + $𝐸_2$ } = Pr{ $𝐸_1$ } + Pr{ $𝐸_2$ } − Pr{ $𝐸_1$ $𝐸_2$ }.
 
-
-## **Probability distribution**
-The probability distribution for a random variable describes how the probabilities are distributed over the values of the random variable. Based on the variables, probability distributions are of two type mainly: 
-1. Discrete probability distribution, and 
-2. Continuous probability distribution.
-
-<img src="https://miro.medium.com/max/720/1*4uD1j7NvakmaLmlpgGwk-A.webp" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
-
 ### **Random variables**
 - A random variable is a numerical description of the outcome of a statistical experiment.
 - A random variable that may assume only a finite number or an infinite sequence of values is said to be discrete; one that may assume any value in some interval on the real number line is said to be continuous
@@ -301,7 +293,12 @@ The probability distribution for a random variable describes how the probabiliti
 
     <img src="https://miro.medium.com/max/640/1*7DwXV_h_t7_-TkLAImKBaQ.webp" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
 
+## **Probability distribution**
+The probability distribution for a random variable describes how the probabilities are distributed over the values of the random variable. Based on the variables, probability distributions are of two type mainly: 
+1. Discrete probability distribution, and 
+2. Continuous probability distribution.
 
+<img src="https://miro.medium.com/max/720/1*4uD1j7NvakmaLmlpgGwk-A.webp" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
 
 ### **Discrete probability distribution:**
 For a discrete random variable, $x$, the probability distribution is defined by a probability mass function, denoted by $p(x)$. This function provides the probability for each value of the random variable.
@@ -320,20 +317,67 @@ Following two conditions must be satisfied for $p(x)$
 
     * $f(x)$ must be nonnegative for each value of the random variable, and
     * the integral over all values of the random variable must equal one.
+- Following are the special probability distribution functions
+    * The binomial distribution
+    * The Poisson distribution
+    * The normal distribution
+
+## Special continuous distribution functions
+
+### 1. Binomial Distribution function: 
+
+If $p$ is the probability that an event will happen in any single trial (called the probability of a success) and $q = (1 - p)$ is the probability that it will fail to happen in any single trial (called the probability of a failure), then the probability that the event will happen exactly $x$ times in $N$ trials (i.e., $x$ successes and $N-x$ failures will occur) is given by
+
+ 
+𝑝(X)=𝑁$_{𝐶_𝑥}$ $𝑝^𝑥$ $𝑞^{𝑁−𝑥}$
+
+where $x= 0, 1, 2, . . . ,N;$ where $N! =N(N - 1)(N-2) …….. 1 $; and $0! = 1$ by definition.
+
+| Statistics | Formula |
+|------------|---------|
+| Mean | $\mu=N p $ |
+| Variance | $\sigma^2 = N p q$ |
+|Standard deviation | $\sigma = \sqrt{N p q}$ |
+| Moment coefficient of skewness | $\alpha_3 = \frac{q-p}{\sqrt{N p q}}$ |
+| Moment coefficient of Kurtosis | $\alpha_4 = 3+ \frac{1-6pq}{N p q}$ |
+
+### 2. The Poisson distribution function: 
+
+The discrete probability distribution
+
+p(X) =  $\frac{\lambda^X e^{-\lambda}}{X!}$
+
+where $\lambda$ is a given constant, is called the Poisson distribution.
+
+| Statistics | Formula |
+|------------|---------|
+| Mean | $\mu=\lambda $ |
+| Variance | $\sigma^2 = \lambda$ |
+|Standard deviation | $\sigma = \sqrt{\lambda}$ |
+| Moment coefficient of skewness | $\alpha_3 = \frac{1}{\sqrt{\lambda}}$ |
+| Moment coefficient of Kurtosis | $\alpha_4 = 3+ \frac{1}{\lambda}$ |
+
+### 3. The normal distribution: 
+
+One of the most important examples of a continuous probability distribution is the normal distribution, normal curve, or Gaussian distribution. It is defined by the equation:
 
 
+<img src="normal-distri.png" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
 
+* Area between $(\mu - \sigma)$ to $(\mu+\sigma)= 68.27 \% $
+* Area between $(\mu - 2 \sigma)$ to $(\mu+ 2 \sigma) = 95.45 \% $
+* Area between $(\mu - 3 \sigma)$ to $(\mu+ 3 \sigma) = 99.73 \% $
 
+where $\mu =$ mean, $\sigma = $ standard deviation. The total area bounded by the curve Y and X axis is 1. Hence the area under the curve between two ordinates X = a and X =b, where a< b, represents the probability that X lies between a and b. This probability is denoted by Pr{a < X < b }.
 
-
-
-
-
-
-
-
-
-
+| Statistics | Formula |
+|------------|---------|
+| Mean | $\mu$ |
+| Variance | $\sigma^2 $ |
+|Standard deviation | $\sigma $ |
+| Moment coefficient of skewness | $\alpha_3 = 0$ |
+| Moment coefficient of Kurtosis | $\alpha_4 = 3$ |
+| Mean deviation | $\sigma\sqrt{\frac{2}{\pi}} = 0.7979 ~ \sigma $ |
 
 
 
