@@ -258,18 +258,18 @@ The framework for ML algorithm development can be divided into five integrated s
 
 ### **Conditional probability; Independent and dependent events**
 - If $E_1$ and $E_2$ are two events, the probability that $E_2$ occurs given that $E_1$ has occurred is denoted by $Pr\{E_2|E_1\}$, or $Pr\{E_2 ~\text{given} ~E_1\}$, and is called the conditional probability of $E_2$ given that $E_1$ has occurred.
-- If the occurrence or non-occurrence of $E_1$ does not affect the probability of occurrence of $E_2$, then $Pr\{E_2 | E_1\}=Pr\{E_2\}$ and we say that $E_1$ and $E_2$ are independent events, they are dependents.
-- If we denote by $(E_1 E_2)$ the event that "both $E_1$ and $E_2$ occur,’’ sometimes called a compound event, then
+- If the occurrence or non-occurrence of $E_1$ does not affect the probability of occurrence of $E_2$, then Pr{$E_2$ | $E_1$}=Pr{$E_2$} and we say that $E_1$ and $E_2$ are independent events, they are dependents.
+- If we denote by ($E_1$ $E_2$) the event that "both $E_1$ and $E_2$ occur,’’ sometimes called a compound event, then
 
-    $Pr \{ 𝐸1𝐸2 \}=Pr\{ 𝐸_1 \} Pr\{ 𝐸_2 | 𝐸_1 \}$
+    Pr{ $𝐸_1$ $𝐸_2$} = Pr{$𝐸_1$} Pr{$𝐸_2$ | $𝐸_1$}
 
 - Similarly for three events $(𝐸_1 𝐸_2 𝐸_3)$ 
 
-    $Pr {𝐸1𝐸2𝐸3}=Pr{𝐸1}Pr {𝐸2|𝐸1}Pr {𝐸3|𝐸2𝐸1}$
+    Pr{$𝐸_1$ $𝐸_2$ $𝐸_3$} = Pr{$𝐸_1$} Pr{$𝐸_2$ | $𝐸_1$} Pr{$𝐸_3$ | $𝐸_2$ $𝐸_1$}
 
     If these events are independent, then 
     
-    $Pr\{𝐸_1 𝐸_2\}=Pr\{𝐸_1\} Pr\{𝐸_2\}.$
+    Pr{$𝐸_1$ $𝐸_2$} = Pr{$𝐸_1$} Pr{$𝐸_2$}.
     
     Similarly 
     
