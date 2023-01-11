@@ -364,9 +364,9 @@ One of the most important examples of a continuous probability distribution is t
 
 <img src="normal-distri.png" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
 
-* Area between $( \mu - \sigma )$ to $( \mu + \sigma )= 68.27  $ %
-* Area between $( \mu - 2 \sigma )$ to $( \mu + 2 \sigma ) = 95.45$ %
-* Area between $( \mu - 3 \sigma )$ to $( \mu + 3 \sigma ) = 99.73 $ %
+* Area between $( \mu - \sigma )$ to $( \mu + \sigma )$ = 68.27   %
+* Area between $( \mu - 2 \sigma )$ to $( \mu + 2 \sigma )$ = 95.45 %
+* Area between $( \mu - 3 \sigma )$ to $( \mu + 3 \sigma )$ = 99.73  %
 
 where $\mu =$ mean, $\sigma = $ standard deviation. The total area bounded by the curve Y and X axis is 1. Hence the area under the curve between two ordinates X = a and X =b, where a< b, represents the probability that X lies between a and b. This probability is denoted by Pr{a < X < b }.
 
