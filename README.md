@@ -261,7 +261,7 @@ The framework for ML algorithm development can be divided into five integrated s
 - If the occurrence or non-occurrence of $E_1$ does not affect the probability of occurrence of $E_2$, then Pr{$E_2$ | $E_1$}=Pr{$E_2$} and we say that $E_1$ and $E_2$ are independent events, they are dependents.
 - If we denote by ($E_1$ $E_2$) the event that "both $E_1$ and $E_2$ occur,’’ sometimes called a compound event, then
 
-    Pr{ $𝐸_1$ $𝐸_2$} = Pr{$𝐸_1$} Pr{$𝐸_2$ | $𝐸_1$}
+    Pr{ $𝐸_1$ $𝐸_2$ } = Pr{ $𝐸_1$ } Pr{ $𝐸_2$ | $𝐸_1$ }
 
 - Similarly for three events $(𝐸_1 𝐸_2 𝐸_3)$ 
 
