@@ -138,34 +138,40 @@ The framework for ML algorithm development can be divided into five integrated s
     - A cross tabulation is a two-way table with the rows of the table representing the classes of one variable and the columns of the table representing the classes of another variable.
 
 2. **Graphical Methods:** A number of graphical methods are available for describing data.
+
     - Dot plots.
     - Histograms.
     - Box-whisker plots.
     - Scatter plots.
     - Bar charts.
     - Pie charts
+
 3. **Numerical statistics:** This is broken down into-
     - Measures of central tendency: include the
         * mean,
         * median,
         * mode,
         * percentiles
+
     - **Measures of variability (spread):** include
         * standard deviation,
         * variance,
         * minimum and maximum variables,
         * kurtosis, and
         * skewness.
-    - **Outliers:** Sometimes data for a variable will include one or more values that appear unusually large or small and out of place when compared with the other data values. These values are known as outliers and often have been erroneously included in the data set.
+
+    - **Outliers:** 
+    Sometimes data for a variable will include one or more values that appear unusually large or small and out of place when compared with the other data values. These values are known as outliers and often have been erroneously included in the data set.
+        
         * The mean and standard deviation are used to identify outliers.
         * A z-score can be computed for each data value.
         * With x representing the data value, x̄ the sample mean, and s the sample standard deviation, the z-score is given by
-
-            $z=\frac{x-\bar{x}}{s}$
+        $$z=\frac{x-\bar{x}}{s}$$
         * The z-score represents the relative position of the data value by indicating the number of standard deviations it is from the mean.
         *  A rule of thumb is that any value with a z-score less than −3 or greater than +3 should be considered an outlier (i.e. 𝑧<−3,𝑜𝑟 𝑧>+3).
 
 - **Mean or expectation value:** 
+
   The expected value, or mean, of a random variable—denoted by E(x) or μ—is a weighted average of the values the random variable may assume. The formulas for computing the expected values of discrete and continuous random variables are given by:
 
     E(x)= $\sum_i$ $x_i$ $p_i(x)$ $~~~~~~~~~~~~~~~~~~~~~~~~$  for discrete variables
@@ -177,6 +183,7 @@ The framework for ML algorithm development can be divided into five integrated s
     𝐸(𝑥) = $\sum_i$ $\frac{f_i x_i}{N}$.
 
 - **Variance:**
+
     * In statistics, variance refers to the spread of a data set. It’s a measurement used to identify how far each number in the data set is from the mean.
     * The larger the variance, the more spread in the data set.
     * A large variance means that the numbers in a set are far from the mean and each other. A small variance means that the numbers are closer together in value.
@@ -196,9 +203,11 @@ The framework for ML algorithm development can be divided into five integrated s
     ([Reference for the figure](https://towardsdatascience.com/5-things-you-should-know-about-covariance-26b12a0516f1))
 
 - **Standard deviation:**
+
     The standard deviation, denoted σ, is the positive square root of the variance., i.e. $\sigma= \sqrt{Var(x)}$. Since the standard deviation is measured in the same units as the random variable and the variance is measured in squared units, the standard deviation is often the preferred measure.
 
 - **Covariance:** 
+
     * Covariance provides insight into how two variables are related to one another.
     * More precisely, covariance refers to the measure of how two random variables in a data set will change together.
     * A positive covariance means that the two variables at hand are positively related, and they move in the same direction.
