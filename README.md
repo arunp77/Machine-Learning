@@ -221,7 +221,7 @@ The framework for ML algorithm development can be divided into five integrated s
 
     <img src="Correlaltion.png" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
 
-        ([for reference click the website](https://www.geeksforgeeks.org/robust-correlation/))
+    ([for reference click the website](https://www.geeksforgeeks.org/robust-correlation/))
 
     * **Relation between the covariance and correlation:**
 
