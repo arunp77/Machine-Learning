@@ -174,7 +174,7 @@ The framework for ML algorithm development can be divided into five integrated s
 
     If $x_1$, $x_2$, $x_3$, ..... $x_i$ ...., $x_k$ have frequency $f_1$, $f_2$, $f_3$,…… ~$f_k$ then 
 
-    𝐸(𝑥)=$\sum_i \frac{f_i~ x_i}{N}$.
+    𝐸(𝑥) = $\sum_i$ $\frac{f_i x_i}{N}$.
 
 - **Variance:**
     * In statistics, variance refers to the spread of a data set. It’s a measurement used to identify how far each number in the data set is from the mean.
