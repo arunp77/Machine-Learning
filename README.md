@@ -383,7 +383,7 @@ where $\mu$ = mean, $\sigma$ = standard deviation. The total area bounded by the
 
     If N is large and if neither p nor q is too close to zero, the binomial distribution can be closely approximated by a normal distribution with standardized variable given by
 
-    $ z = \frac{ x - N p}{Npq}$
+    $$z = \frac{ x - N p}{Npq}.$$
 
 ### 4. Exponential distribution: 
 
