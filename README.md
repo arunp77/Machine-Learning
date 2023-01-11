@@ -205,20 +205,21 @@ The framework for ML algorithm development can be divided into five integrated s
     * A negative covariance means that the variables are inversely related, or that they move in opposite directions.
     * A zero covariance means that the variables are not related to each other.
 
-        <img src="https://media.geeksforgeeks.org/wp-content/uploads/Covar.png" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
-
         Cov(X, Y) = $\frac{\sum_i^n (x_i-\bar{x})(y_i-\bar{y})}{N-1}$
      
         In this formula, $X$ represents the independent variable, $Y$ represents the dependent variable, $N$ represents the number of data points in the sample, $\bar{x}$ represents the mean of the $X$, and $\bar{y}$ represents the mean of the dependent variable $Y$. Note that while calculating a sample variance in order to estimate a population variance, the denominator of the variance equation becomes N – 1. This removes bias from the estimation.
+        
+        <img src="Covariance.png" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
+
 - **Correlation:**
     * Covariance and correlation both primarily assess the relationship between variables.
     * The closest analogy to the relationship between them is the relationship between the variance and standard deviation.
     * Covariance measures the total variation of two random variables from their expected values. Using covariance, we can only gauge the direction of the relationship (whether the variables tend to move in tandem or show an inverse relationship). However, it does not indicate the strength of the relationship, nor the dependency between the variables.
     * On the other hand, correlation measures the strength of the relationship between variables. Correlation is the scaled measure of covariance. It is dimensionless. In other words, the correlation coefficient is always a pure value and not measured in any units.
 
-    <img src="https://media.geeksforgeeks.org/wp-content/uploads/Correl.png" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
+        <img src="Correlaltion.png" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
 
-     ([for reference click the website](https://www.geeksforgeeks.org/robust-correlation/))
+        ([for reference click the website](https://www.geeksforgeeks.org/robust-correlation/))
 
     * **Relation between the covariance and correlation:**
 
