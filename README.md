@@ -205,13 +205,15 @@ The framework for ML algorithm development can be divided into five integrated s
     * A negative covariance means that the variables are inversely related, or that they move in opposite directions.
     * A zero covariance means that the variables are not related to each other.
 
-        Cov(X, Y) = $\frac{\sum_i^n (x_i-\bar{x})(y_i-\bar{y})}{N-1}$
+        Cov(X, Y) = $\frac{\sum (x_i-\bar{x})(y_i-\bar{y})}{N-1} ~~~~~ $ (summed over i, from 0 to N)
      
         In this formula, $X$ represents the independent variable, $Y$ represents the dependent variable, $N$ represents the number of data points in the sample, $\bar{x}$ represents the mean of the $X$, and $\bar{y}$ represents the mean of the dependent variable $Y$. Note that while calculating a sample variance in order to estimate a population variance, the denominator of the variance equation becomes N – 1. This removes bias from the estimation.
-        
+
         <img src="Covariance.png" alt= "MArkdown Monster icon" style= "float: center; margin-right: 10px;"/>
 
+
 - **Correlation:**
+
     * Covariance and correlation both primarily assess the relationship between variables.
     * The closest analogy to the relationship between them is the relationship between the variance and standard deviation.
     * Covariance measures the total variation of two random variables from their expected values. Using covariance, we can only gauge the direction of the relationship (whether the variables tend to move in tandem or show an inverse relationship). However, it does not indicate the strength of the relationship, nor the dependency between the variables.
@@ -231,7 +233,7 @@ The framework for ML algorithm development can be divided into five integrated s
 
         $\sigma_X$ – is the standard deviation of the X-variable
 
-        $\sigma_Y$– is the standard deviation of the Y-variable
+        $\sigma_Y$ – is the standard deviation of the Y-variable
 
     * **Advantages of the Correlation Coefficient:**
         1. Covariance can take on practically any number while a correlation is limited: -1 to +1.
@@ -259,7 +261,7 @@ The framework for ML algorithm development can be divided into five integrated s
 - If the occurrence or non-occurrence of $E_1$ does not affect the probability of occurrence of $E_2$, then $Pr\{E_2 | E_1\}=Pr\{E_2\}$ and we say that $E_1$ and $E_2$ are independent events, they are dependents.
 - If we denote by $(E_1 E_2)$ the event that "both $E_1$ and $E_2$ occur,’’ sometimes called a compound event, then
 
-    $Pr \{𝐸1𝐸2\}=Pr\{𝐸_1\} Pr\{𝐸_2|𝐸_1\}$
+    $Pr \{ 𝐸1𝐸2 \}=Pr\{ 𝐸_1 \} Pr\{ 𝐸_2 | 𝐸_1 \}$
 
 - Similarly for three events $(𝐸_1 𝐸_2 𝐸_3)$ 
 
