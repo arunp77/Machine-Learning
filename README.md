@@ -350,6 +350,7 @@ where $x= 0, 1, 2, . . . ,N;$ where $N! =N(N - 1)(N-2) …….. 1 $; and $0! = 1
 | Moment coefficient of skewness | $\alpha_3 = \frac{q-p}{\sqrt{N p q}}$ |
 | Moment coefficient of Kurtosis | $\alpha_4 = 3+ \frac{1-6pq}{N p q}$ |
 
+
 ### 2. The Poisson distribution function: 
 
 The discrete probability distribution
