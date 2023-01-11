@@ -342,11 +342,11 @@ $$𝑝(X)=𝑁_{𝐶_𝑥} 𝑝^𝑥 𝑞^{𝑁−𝑥}$$
 
 where $x= 0, 1, 2, . . . ,N;$ where $N! =N(N - 1)(N-2) …….. 1 $; and $0! = 1$ by definition.
 
-| Statistics | Formula |
-|------------|---------|
-| Mean | $\mu=N p $ |
-| Variance | $\sigma^2 = N p q$ |
-|Standard deviation | $\sigma = \sqrt{N p q}$ |
+|     Statistics          |       Formula      |
+|-------------------------|--------------------|
+|            Mean         |        $\mu=N p$   |
+|      Variance           | $\sigma^2 = N p q$ |
+| Standard deviation | $\sigma = \sqrt{N p q}$ |
 | Moment coefficient of skewness | $\alpha_3 = \frac{q-p}{\sqrt{N p q}}$ |
 | Moment coefficient of Kurtosis | $\alpha_4 = 3+ \frac{1-6pq}{N p q}$ |
 
