@@ -368,7 +368,7 @@ One of the most important examples of a continuous probability distribution is t
 * Area between $( \mu - 2 \sigma )$ to $( \mu + 2 \sigma )$ = 95.45 %
 * Area between $( \mu - 3 \sigma )$ to $( \mu + 3 \sigma )$ = 99.73  %
 
-where $\mu =$ mean, $\sigma = $ standard deviation. The total area bounded by the curve Y and X axis is 1. Hence the area under the curve between two ordinates X = a and X =b, where a< b, represents the probability that X lies between a and b. This probability is denoted by Pr{a < X < b }.
+where $\mu$ = mean, $\sigma$ = standard deviation. The total area bounded by the curve Y and X axis is 1. Hence the area under the curve between two ordinates X = a and X = b, where a < b, represents the probability that X lies between a and b. This probability is denoted by Pr{a < X < b }.
 
 | Statistics | Formula |
 |------------|---------|
@@ -379,6 +379,22 @@ where $\mu =$ mean, $\sigma = $ standard deviation. The total area bounded by th
 | Moment coefficient of Kurtosis | $\alpha_4 = 3$ |
 | Mean deviation | $\sigma\sqrt{\frac{2}{\pi}} = 0.7979 ~ \sigma $ |
 
+* Relations between the Binomial and normal distributions:
+
+    If N is large and if neither p nor q is too close to zero, the binomial distribution can be closely approximated by a normal distribution with standardized variable given by
+
+    $ z = \frac{ x - N p}{Npq}$
+
+### 4. Exponential distribution: 
+
+In probability theory and statistics, the exponential distribution is the probability distribution of the time between events in a Poisson point process, i.e., a process in which events occur continuously and independently at a constant average rate. The probability density function (pdf) of an exponential distribution is
+
+   $f(x; \lambda) = 
+   \begin{cases}
+      \lambda e^{-\lambda x}, & x\geq 0, \\
+      0, & x < 0 .
+    \end{cases}
+   $
 
 
 
