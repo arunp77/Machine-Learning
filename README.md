@@ -329,7 +329,7 @@ Following two conditions must be satisfied for $p(x)$
 If $p$ is the probability that an event will happen in any single trial (called the probability of a success) and $q = (1 - p)$ is the probability that it will fail to happen in any single trial (called the probability of a failure), then the probability that the event will happen exactly $x$ times in $N$ trials (i.e., $x$ successes and $N-x$ failures will occur) is given by
 
  
-𝑝(X)=𝑁$_{𝐶_𝑥}$ $𝑝^𝑥$ $𝑞^{𝑁−𝑥}$
+$$𝑝(X)=𝑁_{𝐶_𝑥} 𝑝^𝑥 𝑞^{𝑁−𝑥}$$
 
 where $x= 0, 1, 2, . . . ,N;$ where $N! =N(N - 1)(N-2) …….. 1 $; and $0! = 1$ by definition.
 
@@ -345,7 +345,7 @@ where $x= 0, 1, 2, . . . ,N;$ where $N! =N(N - 1)(N-2) …….. 1 $; and $0! = 1
 
 The discrete probability distribution
 
-p(X) =  $\frac{\lambda^X e^{-\lambda}}{X!}$
+$$p(X) =  \frac{\lambda^X e^{-\lambda}}{X!}$$
 
 where $\lambda$ is a given constant, is called the Poisson distribution.
 
@@ -396,7 +396,7 @@ In probability theory and statistics, the exponential distribution is the probab
     \end{cases}
    $$
 
-
+Here λ > 0 is the parameter of the distribution, often called the rate parameter. The distribution is supported on the interval [0, ∞). The exponential distribution exhibits infinite divisibility.
 
 
 
