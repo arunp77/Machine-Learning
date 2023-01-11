@@ -358,8 +358,8 @@ $$p(X) =  \frac{\lambda^X e^{-\lambda}}{X!}$$
 
 where $\lambda$ is a given constant, is called the Poisson distribution.
 
-| Statistics | Formula |
-|------------|---------|
+| Statistics     |    Formula   |
+|----------------|--------------|
 | Mean | $\mu=\lambda $ |
 | Variance | $\sigma^2 = \lambda$ |
 |Standard deviation | $\sigma = \sqrt{\lambda}$ |
