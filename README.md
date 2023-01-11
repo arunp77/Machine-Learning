@@ -398,10 +398,36 @@ In probability theory and statistics, the exponential distribution is the probab
 
 Here λ > 0 is the parameter of the distribution, often called the rate parameter. The distribution is supported on the interval [0, ∞). The exponential distribution exhibits infinite divisibility.
 
+|Statistics| Formula|
+|----------|--------|
+| Mean | $𝐸[𝑋]=\frac{1}{\lambda}$ |
+| Median | $m[X] =\frac{ln(2)}{\lambda} < E[X]$ |
+| Variance | $𝑉𝑎𝑟[𝑋]=\frac{1}{\lambda^2}$ |
+| Moments | $E[X^n]=\frac{n!}{\lambda^n}$|
 
+### 5. Uniform distribution function: 
 
+In statistics, uniform distribution refers to a type of probability distribution in which all outcomes are equally likely. The formula for a discrete uniform distribution is
 
+$$P_x=\frac{1}{n}$$
 
+where $P_x$= Probability of a discrete value
+
+n= Number of values in the range
+
+## Central Limit theorem (CLT): 
+
+In probability theory, the central limit theorem (CLT) states that the distribution of a sample variable approximates a normal distribution (i.e., a “bell curve”) as the sample size becomes larger, assuming that all samples are identical in size, and regardless of the population's actual distribution shape.
+
+- Sample sizes equal to or greater than 30 are often considered sufficient for the CLT to hold. CLT is useful in finance when analysing a large collection of securities to estimate portfolio distributions and traits for returns, risk, and correlation.
+- According to the central limit theorem, the mean of a sample of data will be closer to the mean of the overall population in question, as the sample size increases, notwithstanding the actual distribution of the data. In other words, the data is accurate whether the distribution is normal or aberrant.
+- Key component of CLT is:
+    * Sampling is successive,
+    * Sampling is random,
+    * Samples should be independent,
+    * Samples should be limited,
+    * Sample size is increasing.
+- A Central Limit Theorem word problem will most likely contain the phrase “assume the variable is normally distributed”, or one like it.
 
 
 
