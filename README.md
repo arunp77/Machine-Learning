@@ -1,4 +1,4 @@
-<img src="/ML-Fundamental/ML-image/AI-vs-ML-vs-Deep-Learning.png" width="450" height="460" />
+<img src="/ML-Fundamental/ML-image/AI-vs-ML-vs-Deep-Learning.png" width="550" height="460" />
 
 # Table of contents
 <!--ts-->
