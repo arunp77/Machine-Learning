@@ -1,3 +1,5 @@
+<img src="/Users/arunp77/Documents/Data-science/Machine-Learning/ML-Fundamental/ML-image/AI-vs-ML-vs-Deep-Learning.png" width="450" height="460" />
+
 # Table of contents
 <!--ts-->
    * [Introduction to Machine learning](#introduction-to-machine-learning)
