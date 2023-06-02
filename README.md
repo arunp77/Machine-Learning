@@ -24,6 +24,40 @@
    *  [References](#reference)
 <!--te-->
 
+## Machine learning tools
+- Development
+  - PyCharm
+  - VScode
+  - Jupyter
+ 
+- Training 
+  - PyTorch Lightning
+  - Scikit-Learn
+  - TensorFlow
+  - LightGBM
+  - XGBoost
+  - PyTorch
+
+- Tuning
+  - Keras tune
+  - Hyperopt
+  - Optuna
+ 
+- Optimization
+  - SparseML
+
+- Development / packaging
+  - Hugging Face Endpoints
+  - DeepSparse
+  - Torch Serve
+  - ONNX
+  - TFX 
+
+- Visualization 
+  - Matplotlib
+  - Seaborn
+  - Kangas
+  - Plotly
 
 <!---------------------------- Reference ------------------------------>
 # Reference
