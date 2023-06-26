@@ -1,6 +1,4 @@
-<img src="/ML-Fundamental/ML-image/AI-vs-ML-vs-Deep-Learning.png" width="800" height="350" />
-
-![Alt text](image.png)
+<img src="/ML-Fundamental/ML-image/CS-ml.png" width="800" height="350" />
 
 # Table of contents
 <!--ts-->
