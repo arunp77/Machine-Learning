@@ -1,4 +1,4 @@
-<img src="ML-Fundamental/ML-image/Multi-lin-reg.png" width="500" height="500" />
+<img src="ML-Fundamental/ML-image/CS-ml-deep.png" width="500" height="500" />
 
 ![Alt text](image-1.png)
 
