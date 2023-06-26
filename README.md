@@ -1,6 +1,3 @@
-<img src="/ML-Fundamental/ML-image/CS-ml.png" width="600" height="600" />
-
-
 ![Alt text](image-1.png)
 
 # Table of contents
