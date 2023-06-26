@@ -1,4 +1,4 @@
-<img src="/ML-Fundamental/ML-image/CS-ml.png" width="800" height="350" />
+<img src="/ML-Fundamental/ML-image/CS-ml.png" width="600" height="600" />
 
 # Table of contents
 <!--ts-->
