@@ -5,25 +5,25 @@
 			- Polynomial Regression
 			- Regularisation Techniques
 			- Classification:
-				- Logistic Regression
-				- k-Nearest Neighbour (K-NN)
-				- Support Vector Machine (SVM)
-				- Decision Trees
-				- Random Forest
-				- Gradient Boosting
+				1. Logistic Regression
+				2. k-Nearest Neighbour (K-NN)
+				3. Support Vector Machine (SVM)
+				4. Decision Trees
+             	5. Random Forest
+				6. Gradient Boosting
 	- Unsupervised Learning:
 		- Clustering:
-			- K-means
-			- DBSCAN
-			- Hierarchical Clustering
+			1. K-means
+			2. DBSCAN
+			3. Hierarchical Clustering
 		- Dimensionality Reduction
-			- Principal Component Analysis (PCA)
-			- t-Distributed Stochastic Neighbor Embedding (t-SNE)
-			- Linear Discriminant Analysis (LDA)
-			- Association Rule Learning
+			1. Principal Component Analysis (PCA)
+			2. t-Distributed Stochastic Neighbor Embedding (t-SNE)
+			3. Linear Discriminant Analysis (LDA)
+			4. Association Rule Learning
 	- Reinforcement Leanring 
 		- Model Evaluation and validation:
-			- Cross-Validation
-			- Hyperparameter Tuning
-			- Model Selection Techniques
-			- Evaluation Metrics
+			1. Cross-Validation
+			2. Hyperparameter Tuning
+			3. Model Selection Techniques
+			4. Evaluation Metrics
