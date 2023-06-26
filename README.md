@@ -1,5 +1,7 @@
 <img src="/ML-Fundamental/ML-image/AI-vs-ML-vs-Deep-Learning.png" width="800" height="350" />
 
+![Alt text](image.png)
+
 # Table of contents
 <!--ts-->
    * [Introduction to Machine learning](#introduction-to-machine-learning)
