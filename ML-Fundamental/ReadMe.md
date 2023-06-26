@@ -1,0 +1,29 @@
+- Machine Learning:
+	- Supervised Learning:
+		- Regression
+			- Linear Regression
+			- Polynomial Regression
+			- Regularisation Techniques
+			- Classification:
+				- Logistic Regression
+				- k-Nearest Neighbour (K-NN)
+				- Support Vector Machine (SVM)
+				- Decision Trees
+				- Random Forest
+				- Gradient Boosting
+	- Unsupervised Learning:
+		- Clustering:
+			- K-means
+			- DBSCAN
+			- Hierarchical Clustering
+		- Dimensionality Reduction
+			- Principal Component Analysis (PCA)
+			- t-Distributed Stochastic Neighbor Embedding (t-SNE)
+			- Linear Discriminant Analysis (LDA)
+			- Association Rule Learning
+	- Reinforcement Leanring 
+		- Model Evaluation and validation:
+			- Cross-Validation
+			- Hyperparameter Tuning
+			- Model Selection Techniques
+			- Evaluation Metrics
