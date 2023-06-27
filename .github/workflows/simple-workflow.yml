@@ -1,0 +1,51 @@
+name: Machine Learning Workflow
+on:
+  push:
+    branches:
+      - main  # Adjust the branch name if necessary
+  pull_request:
+    branches:
+      - main  # Adjust the branch name if necessary
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x  # Replace 'x' with the desired Python version
+        
+    - name: Install dependencies
+      run: pip install -r requirements.txt  # Adjust the requirements file name if necessary
+      
+    - name: Run tests
+      run: python -m unittest discover tests/  # Adjust the test directory if necessary
+
+    - name: Generate coverage report
+      run: coverage run -m unittest discover tests/ && coverage report -m
+      
+    - name: Upload coverage report
+      uses: actions/upload-artifact@v2
+      with:
+        name: coverage-report
+        path: coverage_report/
+
+    - name: Build documentation
+      run: |
+        cd docs/
+        pip install -r requirements.txt
+        make html
+
+    - name: Deploy documentation
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs/build/html/
+
+    - name: Model training
+      run: python train.py
