@@ -53,7 +53,9 @@ Detail of every step of the  typical lifecycle management of a machine learning 
 
 <img src="image.png" alt="A sample image" style="width: 70%; height: auto;">
 
-### Example: **Customer Behavior Prediction Model**
+## Example
+Let's consider a simple example where we have an ML project with two stages - development and Markdown?
+### **Customer Behavior Prediction Model**
 
 Imagine a scenario where an e-commerce company wants to develop a machine learning model to predict customer behavior, specifically the likelihood of a customer making a purchase. The dataset includes information about customer demographics, browsing history, past purchases, and time spent on the website.
 
@@ -88,6 +90,13 @@ Assume the following project structure:
           git branch -M main
           git push -u origin main
           ```
+      - **Set up a virtual environment:** To keep your project's dependencies separate from your system's, you can use a virtual environment. Create a new virtual environment and activate it.
+        ```bash
+        python3 -m venv venv
+        source venv/bin/activate
+        ``` 
+        and then initialize the repor using `git init`.
+
   * **Automated Testing:**
     - Unit tests and integration tests are written to verify the correctness of individual model components and their interactions.
     - Developers commit changes regularly, triggering automated tests to identify any integration issues early in the development process.
@@ -237,3 +246,5 @@ Assume the following project structure:
 **Conclusion:**
 
 Continuous Integration and Continuous Deployment ensure that the customer behavior prediction model undergoes a seamless and controlled development, testing, and deployment process. By automating key steps and implementing continuous monitoring, the e-commerce company can maintain a reliable and high-performing predictive model, adapting to changing customer behaviors effectively. The CI/CD pipeline provides a structured framework to enhance the agility and robustness of the machine learning model in response to evolving customer dynamics.
+
+
