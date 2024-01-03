@@ -60,7 +60,7 @@ Detail of every step of the  typical lifecycle management of a machine learning 
 Imagine a scenario where an e-commerce company wants to develop a machine learning model to predict customer behavior, specifically the likelihood of a customer making a purchase. The dataset includes information about customer demographics, browsing history, past purchases, and time spent on the website.
 
 **Project struncture:**
-
+Assume the following project structure:
 - customer_behavior_prediction/
   - src/
     - model.py
@@ -96,25 +96,50 @@ Imagine a scenario where an e-commerce company wants to develop a machine learni
         - **Install `pytest`:** `pip install pytest`
         - **Write a simple test in a file named `test_model.py`:**
           ```
-          # test_model.py
+          # tests/test_model.py
+
+            from src.model import predict_customer_behavior
 
             def test_prediction():
-                # Add your actual test logic here
-                assert 1 + 1 == 2
+                # Assuming predict_customer_behavior is a function in your model
+                prediction = predict_customer_behavior(sample_input)
+                assert prediction in [0, 1]  # Adjust based on your model's output
           ``` 
         - **Run the test:** `pytest`
 
    * **Build Automation:**
       - An automated build system (e.g., Jenkins) compiles the model code, creating an executable version of the predictive model.
-        - **Create a file named `build.py`:**
-          ```
-          # build.py
+        - **Create a file named `model.py`:**
+            ```
+            # src/model.py
+
+            def predict_customer_behavior(input_data):
+                # Replace this with your actual model prediction logic
+                # For simplicity, let's assume the model predicts 1 if spending > $100, otherwise 0
+                return 1 if input_data['spending'] > 100 else 0
+            ```
+        - **Build Script (build.py):** 
+            This script will be used by continuous integration tools like Jenkins or CircleCI to build the project.
+            ```
+            # build.py
 
             def build():
-                # Add your actual build logic here
-                print("Building the model...")
-          ``` 
+                # Replace this with your actual build logic
+                # In this example, we might want to install necessary dependencies
+                # and potentially perform other build steps if needed
+                print("Building the Customer Behavior Prediction Model...")
+                # Add any other build steps as required
+            ```
         - **Run the build script:** `python build.py`
+    * **Requirements File (requirements.txt):**
+        ```
+        # requirements.txt
+
+        numpy==1.21.0
+        pytest==6.2.4
+        # Add any other dependencies required for your project
+        ```
+    
     * **Automating CI with GitHub Actions:**
         Now, let's set up GitHub Actions for automated CI. Create a ``.github/workflows/ci.yml` file:
         ```
@@ -150,6 +175,7 @@ Imagine a scenario where an e-commerce company wants to develop a machine learni
         ```
         This GitHub Actions workflow will be triggered on every push to the main branch, running your tests and build script.
 
+    > Replace the placeholder logic in the test script (test_model.py), model script (model.py), and build script (build.py) with your actual machine learning model, test logic, and any necessary build steps.
 
 
 **2. Continuous Deployment (CD):**
