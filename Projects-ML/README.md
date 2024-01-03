@@ -67,7 +67,13 @@ Imagine a scenario where an e-commerce company wants to develop a machine learni
       - Developers work on separate branches for different features or improvements in the model.
       - They use a version control system (e.g., Git) to manage changes collaboratively.
         - **Initialize a Git repository:** ```git init```
-        - **Create a `.gitignore` file to exclude unnecessary files from version control:** ```bash touch .gitignore```
+        - **Create a `.gitignore` file to exclude unnecessary files from version control:** ```touch .gitignore```
+        - **Add and commit the changes:** 
+            ```
+            git add .
+            git commit -m "Initial commit"
+            ```
+        - s
 
    * **Automated Testing:**
       - Unit tests and integration tests are written to verify the correctness of individual model components and their interactions.
