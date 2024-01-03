@@ -130,7 +130,7 @@ Assume the following project structure:
                 print("Building the Customer Behavior Prediction Model...")
                 # Add any other build steps as required
             ```
-        - **Run the build script:** `python build.py`
+
     * **Requirements File (requirements.txt):**
         ```
         # requirements.txt
@@ -139,7 +139,8 @@ Assume the following project structure:
         pytest==6.2.4
         # Add any other dependencies required for your project
         ```
-    
+    * **Run the build script:** `python build.py`
+
     * **Automating CI with GitHub Actions:**
         Now, let's set up GitHub Actions for automated CI. Create a ``.github/workflows/ci.yml` file:
         ```
