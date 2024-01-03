@@ -165,6 +165,22 @@ Assume the following project structure:
    * **Deployment to Production:**
       - Once the model passes all tests in the staging environment, it is automatically deployed to the production environment.
       - The deployment process includes updating the live model with the new version, ensuring a seamless transition.
+        - **Create a deployment script `deploy.py`:**
+            ```python
+            # deploy.py
+
+            def deploy():
+                # Add your actual deployment logic here
+                print("Deploying the model to production...")
+            ```
+        - Update your GitHub Actions workflow to deploy to production after passing tests:
+            ```yaml
+            # Add the following step after the 'Run acceptance tests' step
+
+            - name: Deploy to production
+                run: python deploy.py
+            ```  
+   
    * **Automating CI/CD with GitHub Actions:** Now, let's set up GitHub Actions for automated CI. Create a ``.github/workflows/ci.yml` file:
           
         ```yaml
