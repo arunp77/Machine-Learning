@@ -80,12 +80,12 @@ Assume the following project structure:
       - **Initialize a Git repository:** ```git init```
       - **Create a `.gitignore` file to exclude unnecessary files from version control:** ```touch .gitignore```
       - **Add and commit the changes:** 
-          ```
+          ```bash
           git add .
           git commit -m "Initial commit"
           ```
       - **Create a GitHub repository and push your code:**
-          ```
+          ```bash
           git remote add origin <your-github-repository-url>
           git branch -M main
           git push -u origin main
@@ -95,7 +95,7 @@ Assume the following project structure:
     - Developers commit changes regularly, triggering automated tests to identify any integration issues early in the development process.
       - **Install `pytest`:** `pip install pytest`
       - **Write a simple test in a file named `test_model.py`:**
-        ```
+        ```python
         # tests/test_model.py
 
           from src.model import predict_customer_behavior
@@ -107,10 +107,9 @@ Assume the following project structure:
         ``` 
       - **Run the test:** `pytest`
 
-  * **Build Automation:**
-    - An automated build system (e.g., Jenkins) compiles the model code, creating an executable version of the predictive model.
+  * **Build Automation:**An automated build system (e.g., Jenkins) compiles the model code, creating an executable version of the predictive model.
       - **Create a file named `model.py`:**
-          ```
+          ```python
           # src/model.py
 
           def predict_customer_behavior(input_data):
@@ -120,7 +119,7 @@ Assume the following project structure:
           ```
       - **Build Script (build.py):** 
           This script will be used by continuous integration tools like Jenkins or CircleCI to build the project.
-          ```
+          ```python
           # build.py
 
           def build():
@@ -133,7 +132,7 @@ Assume the following project structure:
 
   * **Requirements File (requirements.txt):**
       
-      ```
+      ```plaintext
       # requirements.txt
 
       numpy==1.21.0
@@ -142,41 +141,6 @@ Assume the following project structure:
       ```
 
   * **Run the build script:** `python build.py`
-
-  * **Automating CI with GitHub Actions:** Now, let's set up GitHub Actions for automated CI. Create a ``.github/workflows/ci.yml` file:
-      
-      ```
-      name: CI
-      on:
-      push:
-          branches:
-          - main
-
-      jobs:
-      test:
-          runs-on: ubuntu-latest
-
-          steps:
-          - name: Checkout repository
-          uses: actions/checkout@v2
-
-          - name: Set up Python
-          uses: actions/setup-python@v2
-          with:
-              python-version: 3.8
-
-          - name: Install dependencies
-          run: |
-              pip install -r requirements.txt
-              pip install pytest
-
-          - name: Run tests
-          run: pytest
-
-          - name: Build model
-          run: python build.py
-      ```
-      This GitHub Actions workflow will be triggered on every push to the main branch, running your tests and build script.
 
   > Replace the placeholder logic in the test script (test_model.py), model script (model.py), and build script (build.py) with your actual machine learning model, test logic, and any necessary build steps.
 
@@ -190,10 +154,57 @@ Assume the following project structure:
    * **Automated Acceptance Tests:**
       - Automated acceptance tests are conducted to evaluate the model's accuracy, precision, and recall in the staging environment.
       - These tests confirm that the model behaves as expected and meets predefined performance criteria.
+        - Update your GitHub Actions workflow (`ci.yml`) to include acceptance tests:
+         
+            ```yaml
+            # Add the following step after the 'Build model' step
+            - name: Run acceptance tests
+                run: python acceptance_tests.py
+            ``` 
 
    * **Deployment to Production:**
       - Once the model passes all tests in the staging environment, it is automatically deployed to the production environment.
       - The deployment process includes updating the live model with the new version, ensuring a seamless transition.
+   * **Automating CI/CD with GitHub Actions:** Now, let's set up GitHub Actions for automated CI. Create a ``.github/workflows/ci.yml` file:
+          
+        ```yaml
+        name: CI
+        on:
+        push:
+            branches:
+            - main
+
+        jobs:
+        test:
+            runs-on: ubuntu-latest
+
+            steps:
+            - name: Checkout repository
+            uses: actions/checkout@v2
+
+            - name: Set up Python
+            uses: actions/setup-python@v2
+            with:
+                python-version: 3.8
+
+            - name: Install dependencies
+            run: |
+                pip install -r requirements.txt
+                pip install pytest
+
+            - name: Run tests
+            run: pytest
+
+            - name: Build model
+            run: python build.py
+            
+            - name: Run acceptance tests
+            run: python acceptance_tests.py
+
+            - name: Deploy to production
+            run: python deploy.py
+        ```
+          This GitHub Actions workflow will be triggered on every push to the main branch, running your tests and build script. 
 
 **3. Continuous Monitoring and Rollback:**
 
