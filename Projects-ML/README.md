@@ -59,6 +59,17 @@ Detail of every step of the  typical lifecycle management of a machine learning 
 
 Imagine a scenario where an e-commerce company wants to develop a machine learning model to predict customer behavior, specifically the likelihood of a customer making a purchase. The dataset includes information about customer demographics, browsing history, past purchases, and time spent on the website.
 
+**Project struncture:**
+
+- customer_behavior_prediction/
+  - src/
+    - model.py
+  - tests/
+    - test_model.py
+  - build.py
+  - requirements.txt
+
+
 **Steps in Continuous Integration and Continuous Deployment (CI/CD) for Customer Behavior Prediction Model:**
 
 **1. Continuous Integration (CI):**
@@ -73,14 +84,73 @@ Imagine a scenario where an e-commerce company wants to develop a machine learni
             git add .
             git commit -m "Initial commit"
             ```
-        - s
-
+        - **Create a GitHub repository and push your code:**
+            ```
+            git remote add origin <your-github-repository-url>
+            git branch -M main
+            git push -u origin main
+            ```
    * **Automated Testing:**
       - Unit tests and integration tests are written to verify the correctness of individual model components and their interactions.
       - Developers commit changes regularly, triggering automated tests to identify any integration issues early in the development process.
+        - **Install `pytest`:** `pip install pytest`
+        - **Write a simple test in a file named `test_model.py`:**
+          ```
+          # test_model.py
+
+            def test_prediction():
+                # Add your actual test logic here
+                assert 1 + 1 == 2
+          ``` 
+        - **Run the test:** `pytest`
 
    * **Build Automation:**
       - An automated build system (e.g., Jenkins) compiles the model code, creating an executable version of the predictive model.
+        - **Create a file named `build.py`:**
+          ```
+          # build.py
+
+            def build():
+                # Add your actual build logic here
+                print("Building the model...")
+          ``` 
+        - **Run the build script:** `python build.py`
+    * **Automating CI with GitHub Actions:**
+        Now, let's set up GitHub Actions for automated CI. Create a ``.github/workflows/ci.yml` file:
+        ```
+        name: CI
+        on:
+        push:
+            branches:
+            - main
+
+        jobs:
+        test:
+            runs-on: ubuntu-latest
+
+            steps:
+            - name: Checkout repository
+            uses: actions/checkout@v2
+
+            - name: Set up Python
+            uses: actions/setup-python@v2
+            with:
+                python-version: 3.8
+
+            - name: Install dependencies
+            run: |
+                pip install -r requirements.txt
+                pip install pytest
+
+            - name: Run tests
+            run: pytest
+
+            - name: Build model
+            run: python build.py
+        ```
+        This GitHub Actions workflow will be triggered on every push to the main branch, running your tests and build script.
+
+
 
 **2. Continuous Deployment (CD):**
 
