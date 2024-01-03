@@ -180,8 +180,22 @@ Assume the following project structure:
             - name: Deploy to production
                 run: python deploy.py
             ```  
-   
-   * **Automating CI/CD with GitHub Actions:** Now, let's set up GitHub Actions for automated CI. Create a ``.github/workflows/ci.yml` file:
+
+**3. Continuous Monitoring and Rollback:**
+
+   * **Performance Monitoring:**
+      - Continuous monitoring tools (e.g., Prometheus) track the model's performance in real-time.
+      - Metrics such as accuracy, response time, and error rates are continuously monitored to detect any anomalies.
+
+   * **Alerts and Notifications:**
+      - Automated alert systems notify the development team of any significant deviations from expected performance.
+      - Alerts may trigger interventions or investigations to address issues promptly.
+
+   * **Automated Rollback:**
+      - If the model's performance degrades beyond acceptable thresholds, an automated rollback mechanism is initiated.
+      - The system reverts to the previous version of the model to maintain service reliability while the issue is investigated.
+
+**4. Automating CI/CD with GitHub Actions:** Now, let's set up GitHub Actions for automated CI. Create a ``.github/workflows/ci.yml` file:
           
         ```yaml
         name: CI
@@ -221,20 +235,6 @@ Assume the following project structure:
             run: python deploy.py
         ```
           This GitHub Actions workflow will be triggered on every push to the main branch, running your tests and build script. 
-
-**3. Continuous Monitoring and Rollback:**
-
-   * **Performance Monitoring:**
-      - Continuous monitoring tools (e.g., Prometheus) track the model's performance in real-time.
-      - Metrics such as accuracy, response time, and error rates are continuously monitored to detect any anomalies.
-
-   * **Alerts and Notifications:**
-      - Automated alert systems notify the development team of any significant deviations from expected performance.
-      - Alerts may trigger interventions or investigations to address issues promptly.
-
-   * **Automated Rollback:**
-      - If the model's performance degrades beyond acceptable thresholds, an automated rollback mechanism is initiated.
-      - The system reverts to the previous version of the model to maintain service reliability while the issue is investigated.
 
 **Conclusion:**
 
