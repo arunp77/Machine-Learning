@@ -74,109 +74,111 @@ Assume the following project structure:
 
 **1. Continuous Integration (CI):**
    
-   * **Version Control:**
-      - Developers work on separate branches for different features or improvements in the model.
-      - They use a version control system (e.g., Git) to manage changes collaboratively.
-        - **Initialize a Git repository:** ```git init```
-        - **Create a `.gitignore` file to exclude unnecessary files from version control:** ```touch .gitignore```
-        - **Add and commit the changes:** 
-            ```
-            git add .
-            git commit -m "Initial commit"
-            ```
-        - **Create a GitHub repository and push your code:**
-            ```
-            git remote add origin <your-github-repository-url>
-            git branch -M main
-            git push -u origin main
-            ```
-   * **Automated Testing:**
-      - Unit tests and integration tests are written to verify the correctness of individual model components and their interactions.
-      - Developers commit changes regularly, triggering automated tests to identify any integration issues early in the development process.
-        - **Install `pytest`:** `pip install pytest`
-        - **Write a simple test in a file named `test_model.py`:**
+  * **Version Control:**
+    - Developers work on separate branches for different features or improvements in the model.
+    - They use a version control system (e.g., Git) to manage changes collaboratively.
+      - **Initialize a Git repository:** ```git init```
+      - **Create a `.gitignore` file to exclude unnecessary files from version control:** ```touch .gitignore```
+      - **Add and commit the changes:** 
           ```
-          # tests/test_model.py
-
-            from src.model import predict_customer_behavior
-
-            def test_prediction():
-                # Assuming predict_customer_behavior is a function in your model
-                prediction = predict_customer_behavior(sample_input)
-                assert prediction in [0, 1]  # Adjust based on your model's output
-          ``` 
-        - **Run the test:** `pytest`
-
-   * **Build Automation:**
-      - An automated build system (e.g., Jenkins) compiles the model code, creating an executable version of the predictive model.
-        - **Create a file named `model.py`:**
-            ```
-            # src/model.py
-
-            def predict_customer_behavior(input_data):
-                # Replace this with your actual model prediction logic
-                # For simplicity, let's assume the model predicts 1 if spending > $100, otherwise 0
-                return 1 if input_data['spending'] > 100 else 0
-            ```
-        - **Build Script (build.py):** 
-            This script will be used by continuous integration tools like Jenkins or CircleCI to build the project.
-            ```
-            # build.py
-
-            def build():
-                # Replace this with your actual build logic
-                # In this example, we might want to install necessary dependencies
-                # and potentially perform other build steps if needed
-                print("Building the Customer Behavior Prediction Model...")
-                # Add any other build steps as required
-            ```
-
-    * **Requirements File (requirements.txt):**
+          git add .
+          git commit -m "Initial commit"
+          ```
+      - **Create a GitHub repository and push your code:**
+          ```
+          git remote add origin <your-github-repository-url>
+          git branch -M main
+          git push -u origin main
+          ```
+  * **Automated Testing:**
+    - Unit tests and integration tests are written to verify the correctness of individual model components and their interactions.
+    - Developers commit changes regularly, triggering automated tests to identify any integration issues early in the development process.
+      - **Install `pytest`:** `pip install pytest`
+      - **Write a simple test in a file named `test_model.py`:**
         ```
-        # requirements.txt
+        # tests/test_model.py
 
-        numpy==1.21.0
-        pytest==6.2.4
-        # Add any other dependencies required for your project
-        ```
-    * **Run the build script:** `python build.py`
+          from src.model import predict_customer_behavior
 
-    * **Automating CI with GitHub Actions:** Now, let's set up GitHub Actions for automated CI. Create a ``.github/workflows/ci.yml` file:
-        
-        ```
-        name: CI
-        on:
-        push:
-            branches:
-            - main
+          def test_prediction():
+              # Assuming predict_customer_behavior is a function in your model
+              prediction = predict_customer_behavior(sample_input)
+              assert prediction in [0, 1]  # Adjust based on your model's output
+        ``` 
+      - **Run the test:** `pytest`
 
-        jobs:
-        test:
-            runs-on: ubuntu-latest
+  * **Build Automation:**
+    - An automated build system (e.g., Jenkins) compiles the model code, creating an executable version of the predictive model.
+      - **Create a file named `model.py`:**
+          ```
+          # src/model.py
 
-            steps:
-            - name: Checkout repository
-            uses: actions/checkout@v2
+          def predict_customer_behavior(input_data):
+              # Replace this with your actual model prediction logic
+              # For simplicity, let's assume the model predicts 1 if spending > $100, otherwise 0
+              return 1 if input_data['spending'] > 100 else 0
+          ```
+      - **Build Script (build.py):** 
+          This script will be used by continuous integration tools like Jenkins or CircleCI to build the project.
+          ```
+          # build.py
 
-            - name: Set up Python
-            uses: actions/setup-python@v2
-            with:
-                python-version: 3.8
+          def build():
+              # Replace this with your actual build logic
+              # In this example, we might want to install necessary dependencies
+              # and potentially perform other build steps if needed
+              print("Building the Customer Behavior Prediction Model...")
+              # Add any other build steps as required
+          ```
 
-            - name: Install dependencies
-            run: |
-                pip install -r requirements.txt
-                pip install pytest
+  * **Requirements File (requirements.txt):**
+      
+      ```
+      # requirements.txt
 
-            - name: Run tests
-            run: pytest
+      numpy==1.21.0
+      pytest==6.2.4
+      # Add any other dependencies required for your project
+      ```
 
-            - name: Build model
-            run: python build.py
-        ```
-        This GitHub Actions workflow will be triggered on every push to the main branch, running your tests and build script.
+  * **Run the build script:** `python build.py`
 
-    > Replace the placeholder logic in the test script (test_model.py), model script (model.py), and build script (build.py) with your actual machine learning model, test logic, and any necessary build steps.
+  * **Automating CI with GitHub Actions:** Now, let's set up GitHub Actions for automated CI. Create a ``.github/workflows/ci.yml` file:
+      
+      ```
+      name: CI
+      on:
+      push:
+          branches:
+          - main
+
+      jobs:
+      test:
+          runs-on: ubuntu-latest
+
+          steps:
+          - name: Checkout repository
+          uses: actions/checkout@v2
+
+          - name: Set up Python
+          uses: actions/setup-python@v2
+          with:
+              python-version: 3.8
+
+          - name: Install dependencies
+          run: |
+              pip install -r requirements.txt
+              pip install pytest
+
+          - name: Run tests
+          run: pytest
+
+          - name: Build model
+          run: python build.py
+      ```
+      This GitHub Actions workflow will be triggered on every push to the main branch, running your tests and build script.
+
+  > Replace the placeholder logic in the test script (test_model.py), model script (model.py), and build script (build.py) with your actual machine learning model, test logic, and any necessary build steps.
 
 
 **2. Continuous Deployment (CD):**
