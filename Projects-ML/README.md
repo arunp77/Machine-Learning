@@ -53,9 +53,7 @@ Detail of every step of the  typical lifecycle management of a machine learning 
 
 <img src="image.png" alt="A sample image" style="width: 70%; height: auto;">
 
-### Example
-
-**Example: Customer Behavior Prediction Model**
+### Example: **Customer Behavior Prediction Model**
 
 Imagine a scenario where an e-commerce company wants to develop a machine learning model to predict customer behavior, specifically the likelihood of a customer making a purchase. The dataset includes information about customer demographics, browsing history, past purchases, and time spent on the website.
 
