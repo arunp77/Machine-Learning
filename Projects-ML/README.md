@@ -196,7 +196,7 @@ Assume the following project structure:
 **4. Automating CI/CD with GitHub Actions:** Now, let's set up GitHub Actions for automated CI. Create a ``.github/workflows/ci.yml` file:
           
         ```yaml
-        name: CI
+        name: CI/CD
         on:
         push:
             branches:
