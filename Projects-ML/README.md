@@ -141,9 +141,8 @@ Assume the following project structure:
         ```
     * **Run the build script:** `python build.py`
 
-    * **Automating CI with GitHub Actions:**
-     
-        Now, let's set up GitHub Actions for automated CI. Create a ``.github/workflows/ci.yml` file:
+    * **Automating CI with GitHub Actions:** Now, let's set up GitHub Actions for automated CI. Create a ``.github/workflows/ci.yml` file:
+        
         ```
         name: CI
         on:
