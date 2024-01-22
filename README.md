@@ -24,43 +24,11 @@
    *  [References](#reference)
 <!--te-->
 
-## Machine learning tools
-- Development
-  - PyCharm
-  - VScode
-  - Jupyter
- 
-- Training 
-  - PyTorch Lightning
-  - Scikit-Learn
-  - TensorFlow
-  - LightGBM
-  - XGBoost
-  - PyTorch
-
-- Tuning
-  - Keras tune
-  - Hyperopt
-  - Optuna
- 
-- Optimization
-  - SparseML
-
-- Development / packaging
-  - Hugging Face Endpoints
-  - DeepSparse
-  - Torch Serve
-  - ONNX
-  - TFX 
-
-- Visualization 
-  - Matplotlib
-  - Seaborn
-  - Kangas
-  - Plotly
 
 <!---------------------------- Reference ------------------------------>
 # Reference
+
+Individual references are given in individual notebooks. Here are few general references that one can look at:
 
 1. Machine learning using python, Manarajan Pradhan, U Dinesh Kumar
 2. Please follow lecture series provided at [Jovian.ml](https://jovian.ai/), i.e. [Data Analysis with Python: Zero to Pandas](https://jovian.ai/learn/data-analysis-with-python-zero-to-pandas)
