@@ -2,28 +2,18 @@
 
 # Table of contents
 <!--ts-->
-   * [Introduction to Machine learning](#introduction-to-machine-learning)
-      * [Analytics](#analytics)
-      * [Categories of ML algorithms](#categories-of-ml-algorithms)
-      * [A typical ML algorithm uses the following steps](#a-typical-ml-algorithm-uses-the-following-steps)
-      * [Framework for develping ML models](#framework-for-develping-ml-models)
-   *  [Python](https://github.com/arunsinp/Python-programming)
-      * [Google colab help](https://github.com/arunsinp/Python-programming/blob/main/Python-fundamental/google-colab-help.ipynb)
-      * [Python OS and filesystem](https://github.com/arunsinp/Python-programming/blob/main/Python-fundamental/python-os-and-filesystem.ipynb)
-      * [First steps with python](https://github.com/arunsinp/Python-programming/blob/main/Python-fundamental/0.first-steps-with-python.ipynb)
-      * [Python variables and data types](https://github.com/arunsinp/Python-programming/blob/main/Python-fundamental/1.python-variables-and-data-types.ipynb)
-      * [Python conditionals and loops](https://github.com/arunsinp/Python-programming/blob/main/Python-fundamental/2.python-conditionals-and-loops.ipynb)
-      * [Python functions and scope](https://github.com/arunsinp/Python-programming/blob/main/Python-fundamental/3.%20python-functions-and-scope.ipynb)
-      * [Numpy](https://github.com/arunsinp/Python-programming/blob/main/Python-fundamental/NUMPY.ipynb)
-   * [Python and data science](#python-and-data-science)
-      * [Core Python Libraries for Data Analysis](#core-python-libraries-for-data-analysis)
-      * [Descriptive statistics](#descriptive-statisctics)
-      * [Probability distributions and hypothesis testing](#probability-diestributions-and-hypotehsis-testing)
-      * [Linear Regression](#linear-regression)
-      * [Advanced machine learning](#advanced-machine-learning)
-   *  [References](#reference)
+   - Introduction to Machine learning:
+    - Analytics
+    - Categories of ML algorithms
+    - A typical ML algorithm uses the following steps
+    - Framework for develping ML models
+  - **Machine learning Fundamentals and application:** This repository provides a comprehensive introduction to machine learning concepts, algorithms, and applications. It covers the essential theoretical foundations of machine learning, as well as practical examples and hands-on projects to solidify your understanding.
+  - **Deep Learning:** Delve into the world of deep learning, exploring its theoretical underpinnings and applying it to real-world problems. This folder contains notebooks and related files that guide you through the fundamentals of deep learning, including neural networks, convolutional neural networks, and recurrent neural networks.
+  - **Projects-ML:** Hands-on experience is invaluable for mastering machine learning. This folder offers a collection of sample projects that apply the concepts and algorithms discussed in the other folders. These projects provide practical exposure to machine learning techniques and allow you to apply your knowledge to real-world scenarios.
+  - **Statistical fundamentals:** Statistics plays a pivotal role in machine learning. This folder delves into the intricacies of statistics, particularly inferential and descriptive statistics. It provides detailed explanations of statistical concepts and introduces applications of statistics in machine learning.
+  - **ML-Data:** Datasets are indispensable for machine learning projects. This folder contains the data files used in the sample projects, ensuring that you have access to the relevant data to replicate and experiment with the provided examples.
+  - References
 <!--te-->
-
 
 <!---------------------------- Reference ------------------------------>
 # Reference
