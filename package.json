@@ -14,7 +14,7 @@
     "machine-learning",
     "Python",
     "Datascience",
-    "ALgorithms",
+    "Algorithms",
     "Projects"
   ],
   "author": "Arun Kumar Pandey",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/arunp77/Machine-Learning/issues"
   },
-  "homepage": "https://github.com/arunp77/Machine-Learning#readme"
+  "homepage": "https://github.com/arunp77/Machine-Learning#readme",
+  "publishConfig": {
+    "@arunp77:registry": "https://npm.pkg.github.com"
+  }
 }
