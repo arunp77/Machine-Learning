@@ -1,0 +1,26 @@
+{
+  "name": "machine-learning",
+  "version": "1.0.0",
+  "description": "This Repository contains the Machine learning related files with fundamental theory is included in the package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arunp77/Machine-Learning.git"
+  },
+  "keywords": [
+    "machine-learning",
+    "Python",
+    "Datascience",
+    "ALgorithms",
+    "Projects"
+  ],
+  "author": "Arun Kumar Pandey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arunp77/Machine-Learning/issues"
+  },
+  "homepage": "https://github.com/arunp77/Machine-Learning#readme"
+}
