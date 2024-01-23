@@ -6,7 +6,7 @@
     - Analytics
     - Categories of ML algorithms
     - A typical ML algorithm uses the following steps
-    - Framework for develping ML models
+    - Framework for develping ML models 
   - **Machine learning Fundamentals and application:** This repository provides a comprehensive introduction to machine learning concepts, algorithms, and applications. It covers the essential theoretical foundations of machine learning, as well as practical examples and hands-on projects to solidify your understanding.
   - **Deep Learning:** Delve into the world of deep learning, exploring its theoretical underpinnings and applying it to real-world problems. This folder contains notebooks and related files that guide you through the fundamentals of deep learning, including neural networks, convolutional neural networks, and recurrent neural networks.
   - **Projects-ML:** Hands-on experience is invaluable for mastering machine learning. This folder offers a collection of sample projects that apply the concepts and algorithms discussed in the other folders. These projects provide practical exposure to machine learning techniques and allow you to apply your knowledge to real-world scenarios.
