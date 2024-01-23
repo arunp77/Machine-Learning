@@ -1,17 +1,17 @@
 {
-  "name": "machine-learning",
+  "name": "workflows",
   "version": "1.0.0",
-  "description": "This Repository contains the Machine learning related files with fundamental theory is included in the package.",
+  "description": "This Repository contains the Machine learning related files with fundamental theory is included in the package",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arunp77/Machine-Learning.git"
   },
   "keywords": [
-    "machine-learning",
+    "Machine-learning",
     "Python",
     "Datascience",
     "Algorithms",
@@ -22,8 +22,5 @@
   "bugs": {
     "url": "https://github.com/arunp77/Machine-Learning/issues"
   },
-  "homepage": "https://github.com/arunp77/Machine-Learning#readme",
-  "publishConfig": {
-    "@arunp77:registry": "https://npm.pkg.github.com"
-  }
+  "homepage": "https://github.com/arunp77/Machine-Learning#readme"
 }
