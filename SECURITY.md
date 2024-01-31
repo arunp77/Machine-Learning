@@ -2,20 +2,21 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Currently, the security updates are applied to the following version:
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+- Version v2.0.0.0
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+If you discover a security vulnerability within the supported version, please send an email to [arunp77@gmail.com](mailto:arunp77@gmail.com) with a detailed description of the vulnerability. Our team will respond to the report promptly.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+## Updates and Patching
+
+Security updates for the supported version will be released as needed and will be available through the [releases](https://github.com/arunp77/Machine-Learning/releases) section of this repository.
+
+## Responsible Disclosure
+
+We believe in responsible disclosure. We appreciate your efforts to keep our project secure and are open to working with you to address any issues.
+
+Thank you for your contributions to the security of our project.
+
