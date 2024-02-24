@@ -19,7 +19,7 @@
  B        1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town
  LSTAT    % lower status of the population
  MEDV     Median value of owner-occupied homes in $1000's
- CRIM
+
  0.00632  18.00   2.310  0  0.5380  6.5750  65.20  4.0900   1  296.0  15.30
   396.90   4.98  24.00
  0.02731   0.00   7.070  0  0.4690  6.4210  78.90  4.9671   2  242.0  17.80
