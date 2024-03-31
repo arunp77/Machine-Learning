@@ -15,6 +15,9 @@
   - References
 <!--te-->
 
+
+## Will be updating many more interesting concepts and project here soon..... 
+
 <!---------------------------- Reference ------------------------------>
 # Reference
 
